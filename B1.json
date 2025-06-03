@@ -1,0 +1,510 @@
+[
+  {
+    "type": "multiple_choice",
+    "level": "B1",
+    "topic": "Grammar - Tenses",
+    "questionText": "I _____ for two hours when you called.",
+    "options": ["had been studying", "was studying", "studied", "have studied"],
+    "correctAnswer": "had been studying"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Grammar - Conditionals",
+    "questionText": "If I had known you were coming, I _____ a cake.",
+    "sentenceParts": ["If I had known you were coming, I ", " a cake."],
+    "correctAnswer": "would have baked"
+  },
+  {
+    "type": "drag_and_drop",
+    "level": "B1",
+    "topic": "Vocabulary - Phrasal Verbs",
+    "questionText": "Drag the words to complete the sentences.",
+    "blanks": [
+      {"id": "blank1", "sentencePart": "Can you ", "options": ["up", "on", "off"], "correctAnswer": "look"},
+      {"id": "blank2", "sentencePart": " the word in the dictionary?"}
+    ],
+    "correctOrder": ["look", "up"]
+  },
+  {
+    "type": "dropdown",
+    "level": "B1",
+    "topic": "Grammar - Modals",
+    "questionText": "You _____ smoke in here. It's forbidden.",
+    "options": ["mustn't", "shouldn't", "can't", "wouldn't"],
+    "correctAnswer": "mustn't"
+  },
+  {
+    "type": "reading_passage",
+    "level": "B1",
+    "topic": "Reading Comprehension",
+    "passage": "The Amazon rainforest is the largest rainforest in the world, covering an area of approximately 5.5 million square kilometers. It is home to an incredible variety of plants and animals, many of which are unique to the region. The rainforest plays a crucial role in regulating the Earth's climate by absorbing carbon dioxide and producing oxygen. However, it is currently facing significant threats from deforestation, logging, and agricultural expansion, which are destroying vast areas of its natural habitat.",
+    "questions": [
+      {
+        "questionText": "What is the main idea of the passage?",
+        "options": [
+          "The Amazon is a beautiful place.",
+          "The Amazon rainforest is important but is being destroyed.",
+          "The Amazon has many unique animals.",
+          "Deforestation is a new problem."
+        ],
+        "correctAnswer": "The Amazon rainforest is important but is being destroyed."
+      },
+      {
+        "questionText": "What is NOT a threat to the Amazon rainforest mentioned in the passage?",
+        "options": ["deforestation", "logging", "climate change", "agricultural expansion"],
+        "correctAnswer": "climate change"
+      }
+    ]
+  },
+  {
+    "type": "multiple_choice",
+    "level": "B1",
+    "topic": "Vocabulary - Synonyms",
+    "questionText": "Choose the word closest in meaning to 'ancient'.",
+    "options": ["modern", "old", "new", "fast"],
+    "correctAnswer": "old"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Grammar - Passive Voice",
+    "questionText": "The report _____ by the manager yesterday.",
+    "sentenceParts": ["The report ", " by the manager yesterday."],
+    "correctAnswer": "was written"
+  },
+  {
+    "type": "drag_and_drop",
+    "level": "B1",
+    "topic": "Vocabulary - Adjectives",
+    "questionText": "Drag the adjectives to describe the person.",
+    "blanks": [
+      {"id": "blank1", "sentencePart": "She is very ", "options": ["friendly", "tall", "slow"], "correctAnswer": "friendly"},
+      {"id": "blank2", "sentencePart": " and always smiling."}
+    ],
+    "correctOrder": ["friendly"]
+  },
+  {
+    "type": "dropdown",
+    "level": "B1",
+    "topic": "Grammar - Relative Clauses",
+    "questionText": "This is the book _____ I told you about.",
+    "options": ["which", "who", "where", "what"],
+    "correctAnswer": "which"
+  },
+  {
+    "type": "multiple_choice",
+    "level": "B1",
+    "topic": "Grammar - Reported Speech",
+    "questionText": "She said she _____ feeling well.",
+    "options": ["wasn't", "isn't", "won't be", "don't be"],
+    "correctAnswer": "wasn't"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Vocabulary - Collocations",
+    "questionText": "I need to _____ a decision soon.",
+    "sentenceParts": ["I need to ", " a decision soon."],
+    "correctAnswer": "make"
+  },
+  {
+    "type": "drag_and_drop",
+    "level": "B1",
+    "topic": "Grammar - Prepositions",
+    "questionText": "Drag the prepositions to complete the sentences.",
+    "blanks": [
+      {"id": "blank1", "sentencePart": "I'm interested ", "options": ["in", "on", "at"], "correctAnswer": "in"},
+      {"id": "blank2", "sentencePart": " learning Spanish."}
+    ],
+    "correctOrder": ["in"]
+  },
+  {
+    "type": "dropdown",
+    "level": "B1",
+    "topic": "Vocabulary - Adverbs of Frequency",
+    "questionText": "I _____ go to the gym, about three times a week.",
+    "options": ["often", "rarely", "never", "always"],
+    "correctAnswer": "often"
+  },
+  {
+    "type": "reading_passage",
+    "level": "B1",
+    "topic": "Reading Comprehension",
+    "passage": "Climate change is a global phenomenon that refers to long-term shifts in temperatures and weather patterns. These shifts may be natural, but since the 1800s, human activities have been the main driver of climate change, primarily due to the burning of fossil fuels (like coal, oil, and gas), which produces heat-trapping gases. The consequences of climate change include rising sea levels, more extreme weather events, and disruptions to ecosystems.",
+    "questions": [
+      {
+        "questionText": "What is the primary cause of climate change since the 1800s?",
+        "options": [
+          "natural shifts",
+          "volcanic eruptions",
+          "burning of fossil fuels",
+          "solar flares"
+        ],
+        "correctAnswer": "burning of fossil fuels"
+      },
+      {
+        "questionText": "Which of these is NOT a consequence of climate change mentioned?",
+        "options": ["rising sea levels", "more extreme weather", "increased biodiversity", "disruptions to ecosystems"],
+        "correctAnswer": "increased biodiversity"
+      }
+    ]
+  },
+  {
+    "type": "multiple_choice",
+    "level": "B1",
+    "topic": "Grammar - Future Tenses",
+    "questionText": "By this time next year, I _____ my degree.",
+    "options": ["will have finished", "will finish", "am finishing", "finish"],
+    "correctAnswer": "will have finished"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Vocabulary - Opposites",
+    "questionText": "The opposite of 'optimistic' is _____.",
+    "sentenceParts": ["The opposite of 'optimistic' is ", "."],
+    "correctAnswer": "pessimistic"
+  },
+  {
+    "type": "drag_and_drop",
+    "level": "B1",
+    "topic": "Grammar - Articles",
+    "questionText": "Drag the articles to complete the sentences.",
+    "blanks": [
+      {"id": "blank1", "sentencePart": "She bought ", "options": ["a", "an", "the"], "correctAnswer": "an"},
+      {"id": "blank2", "sentencePart": " interesting book."}
+    ],
+    "correctOrder": ["an"]
+  },
+  {
+    "type": "dropdown",
+    "level": "B1",
+    "topic": "Vocabulary - Linking Words",
+    "questionText": "He is very intelligent; _____, he is not very good at practical tasks.",
+    "options": ["however", "therefore", "in addition", "similarly"],
+    "correctAnswer": "however"
+  },
+  {
+    "type": "multiple_choice",
+    "level": "B1",
+    "topic": "Grammar - Gerunds and Infinitives",
+    "questionText": "I enjoy _____ in the park.",
+    "options": ["walking", "to walk", "walk", "walks"],
+    "correctAnswer": "walking"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Vocabulary - Idioms",
+    "questionText": "It's raining _____ and dogs, so I can't go out.",
+    "sentenceParts": ["It's raining ", " and dogs, so I can't go out."],
+    "correctAnswer": "cats"
+  },
+  {
+    "type": "drag_and_drop",
+    "level": "B1",
+    "topic": "Grammar - Quantifiers",
+    "questionText": "Drag the quantifiers to complete the sentences.",
+    "blanks": [
+      {"id": "blank1", "sentencePart": "There are ", "options": ["a few", "a lot of", "much"], "correctAnswer": "a lot of"},
+      {"id": "blank2", "sentencePart": " people here today."}
+    ],
+    "correctOrder": ["a lot of"]
+  },
+  {
+    "type": "dropdown",
+    "level": "B1",
+    "topic": "Grammar - Phrasal Verbs",
+    "questionText": "She decided to _____ her old clothes.",
+    "options": ["give up", "give away", "give in", "give out"],
+    "correctAnswer": "give away"
+  },
+  {
+    "type": "multiple_choice",
+    "level": "B1",
+    "topic": "Vocabulary - Feelings and Emotions",
+    "questionText": "I felt very _____ after hearing the bad news.",
+    "options": ["depressed", "excited", "thrilled", "amused"],
+    "correctAnswer": "depressed"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Grammar - Comparatives and Superlatives",
+    "questionText": "This is _____ book I've ever read.",
+    "sentenceParts": ["This is ", " book I've ever read."],
+    "correctAnswer": "the most interesting"
+  },
+  {
+    "type": "reading_passage",
+    "level": "B1",
+    "topic": "Reading Comprehension",
+    "passage": "The internet has revolutionized the way we live, work, and communicate. It provides instant access to information, allows for global communication, and offers countless opportunities for entertainment and learning. However, it also presents challenges, such as the spread of misinformation, privacy concerns, and the risk of addiction. As technology continues to evolve, so too will the ways in which we interact with the digital world.",
+    "questions": [
+      {
+        "questionText": "What is one of the benefits of the internet mentioned?",
+        "options": [
+          "spread of misinformation",
+          "privacy concerns",
+          "instant access to information",
+          "risk of addiction"
+        ],
+        "correctAnswer": "instant access to information"
+      },
+      {
+        "questionText": "What is a challenge associated with the internet?",
+        "options": ["global communication", "entertainment", "learning opportunities", "privacy concerns"],
+        "correctAnswer": "privacy concerns"
+      }
+    ]
+  },
+  {
+    "type": "drag_and_drop",
+    "level": "B1",
+    "topic": "Vocabulary - Adverbs of Manner",
+    "questionText": "Drag the adverbs to describe how the actions were performed.",
+    "blanks": [
+      {"id": "blank1", "sentencePart": "He drives ", "options": ["carefully", "fast", "loudly"], "correctAnswer": "carefully"},
+      {"id": "blank2", "sentencePart": " through the city."}
+    ],
+    "correctOrder": ["carefully"]
+  },
+  {
+    "type": "dropdown",
+    "level": "B1",
+    "topic": "Grammar - Cause and Effect",
+    "questionText": "She couldn't go to the party _____ she was ill.",
+    "options": ["because", "although", "despite", "however"],
+    "correctAnswer": "because"
+  },
+  {
+    "type": "multiple_choice",
+    "level": "B1",
+    "topic": "Vocabulary - Education",
+    "questionText": "Students usually _____ exams at the end of the semester.",
+    "options": ["take", "give", "make", "do"],
+    "correctAnswer": "take"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Grammar - Past Perfect Continuous",
+    "questionText": "They _____ for hours before they found the right answer.",
+    "sentenceParts": ["They ", " for hours before they found the right answer."],
+    "correctAnswer": "had been searching"
+  },
+  {
+    "type": "drag_and_drop",
+    "level": "B1",
+    "topic": "Vocabulary - Travel",
+    "questionText": "Drag the words to complete the travel-related sentences.",
+    "blanks": [
+      {"id": "blank1", "sentencePart": "We're going on a ", "options": ["trip", "journey", "voyage"], "correctAnswer": "trip"},
+      {"id": "blank2", "sentencePart": " to the mountains next week."}
+    ],
+    "correctOrder": ["trip"]
+  },
+  {
+    "type": "dropdown",
+    "level": "B1",
+    "topic": "Grammar - Used to",
+    "questionText": "I _____ live in a small village, but now I live in the city.",
+    "options": ["used to", "am used to", "get used to", "would"],
+    "correctAnswer": "used to"
+  },
+  {
+    "type": "multiple_choice",
+    "level": "B1",
+    "topic": "Vocabulary - Money",
+    "questionText": "He earns a good _____ from his new job.",
+    "options": ["salary", "fee", "cost", "price"],
+    "correctAnswer": "salary"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Grammar - Third Conditional",
+    "questionText": "If she _____ harder, she would have passed the exam.",
+    "sentenceParts": ["If she ", " harder, she would have passed the exam."],
+    "correctAnswer": "had studied"
+  },
+  {
+    "type": "drag_and_drop",
+    "level": "B1",
+    "topic": "Vocabulary - Food",
+    "questionText": "Drag the words to describe the food.",
+    "blanks": [
+      {"id": "blank1", "sentencePart": "This soup is very ", "options": ["delicious", "spicy", "sweet"], "correctAnswer": "delicious"},
+      {"id": "blank2", "sentencePart": "!"}
+    ],
+    "correctOrder": ["delicious"]
+  },
+  {
+    "type": "dropdown",
+    "level": "B1",
+    "topic": "Grammar - Wishes",
+    "questionText": "I wish I _____ fly.",
+    "options": ["could", "can", "would", "will"],
+    "correctAnswer": "could"
+  },
+  {
+    "type": "multiple_choice",
+    "level": "B1",
+    "topic": "Vocabulary - Health",
+    "questionText": "You should drink plenty of water to stay _____.",
+    "options": ["hydrated", "exhausted", "ill", "tired"],
+    "correctAnswer": "hydrated"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Grammar - Phrasal Verbs",
+    "questionText": "I need to _____ up on my sleep.",
+    "sentenceParts": ["I need to ", " up on my sleep."],
+    "correctAnswer": "catch"
+  },
+  {
+    "type": "reading_passage",
+    "level": "B1",
+    "topic": "Reading Comprehension",
+    "passage": "London, the capital of England and the United Kingdom, is a vibrant and diverse city with a rich history. It is home to many iconic landmarks, such as the Tower of London, Buckingham Palace, and the British Museum. The city also boasts a thriving arts scene, numerous parks, and a world-class public transport system. Millions of tourists visit London each year to experience its unique blend of tradition and modernity.",
+    "questions": [
+      {
+        "questionText": "What is London the capital of?",
+        "options": [
+          "France and Germany",
+          "England and the United Kingdom",
+          "Spain and Italy",
+          "The United States"
+        ],
+        "correctAnswer": "England and the United Kingdom"
+      },
+      {
+        "questionText": "Which of these is NOT an iconic landmark mentioned in London?",
+        "options": ["Tower of London", "Eiffel Tower", "Buckingham Palace", "British Museum"],
+        "correctAnswer": "Eiffel Tower"
+      }
+    ]
+  },
+  {
+    "type": "drag_and_drop",
+    "level": "B1",
+    "topic": "Vocabulary - Professions",
+    "questionText": "Drag the words to match the professions.",
+    "blanks": [
+      {"id": "blank1", "sentencePart": "A person who designs buildings is an ", "options": ["architect", "doctor", "teacher"], "correctAnswer": "architect"},
+      {"id": "blank2", "sentencePart": "."}
+    ],
+    "correctOrder": ["architect"]
+  },
+  {
+    "type": "dropdown",
+    "level": "B1",
+    "topic": "Grammar - Future Perfect",
+    "questionText": "By next week, she _____ her project.",
+    "options": ["will have completed", "will complete", "is completing", "completes"],
+    "correctAnswer": "will have completed"
+  },
+  {
+    "type": "multiple_choice",
+    "level": "B1",
+    "topic": "Vocabulary - Technology",
+    "questionText": "I need to _____ my phone's software.",
+    "options": ["update", "download", "upload", "delete"],
+    "correctAnswer": "update"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Grammar - Passive with Modals",
+    "questionText": "The package _____ sent by tomorrow.",
+    "sentenceParts": ["The package ", " sent by tomorrow."],
+    "correctAnswer": "should be"
+  },
+  {
+    "type": "drag_and_drop",
+    "level": "B1",
+    "topic": "Vocabulary - Sports",
+    "questionText": "Drag the words to describe the sport.",
+    "blanks": [
+      {"id": "blank1", "sentencePart": "Football is a very ", "options": ["popular", "difficult", "boring"], "correctAnswer": "popular"},
+      {"id": "blank2", "sentencePart": " sport."}
+    ],
+    "correctOrder": ["popular"]
+  },
+  {
+    "type": "dropdown",
+    "level": "B1",
+    "topic": "Grammar - Quantifiers",
+    "questionText": "There isn't _____ milk left in the fridge.",
+    "options": ["any", "some", "a few", "many"],
+    "correctAnswer": "any"
+  },
+  {
+    "type": "multiple_choice",
+    "level": "B1",
+    "topic": "Vocabulary - Crime",
+    "questionText": "The police arrested the _____ for robbery.",
+    "options": ["suspect", "witness", "victim", "detective"],
+    "correctAnswer": "suspect"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Grammar - Reflexive Pronouns",
+    "questionText": "He cut _____ while he was cooking.",
+    "sentenceParts": ["He cut ", " while he was cooking."],
+    "correctAnswer": "himself"
+  },
+  {
+    "type": "reading_passage",
+    "level": "B1",
+    "topic": "Reading Comprehension",
+    "passage": "Coffee is one of the most popular beverages in the world, enjoyed by billions of people daily. It is made from roasted coffee beans, which are the seeds of coffee cherries. The cultivation of coffee originated in Ethiopia and has since spread to many tropical regions around the globe. Coffee can be prepared in various ways, from a simple black coffee to elaborate lattes and cappuccinos, each offering a unique flavor profile.",
+    "questions": [
+      {
+        "questionText": "What is coffee made from?",
+        "options": [
+          "tea leaves",
+          "roasted coffee beans",
+          "cocoa beans",
+          "fruit juice"
+        ],
+        "correctAnswer": "roasted coffee beans"
+      },
+      {
+        "questionText": "Where did coffee cultivation originate?",
+        "options": ["Brazil", "Colombia", "Vietnam", "Ethiopia"],
+        "correctAnswer": "Ethiopia"
+      }
+    ]
+  },
+  {
+    "type": "drag_and_drop",
+    "level": "B1",
+    "topic": "Vocabulary - Adjectives",
+    "questionText": "Drag the adjectives to describe the weather.",
+    "blanks": [
+      {"id": "blank1", "sentencePart": "It was a ", "options": ["sunny", "rainy", "cloudy"], "correctAnswer": "sunny"},
+      {"id": "blank2", "sentencePart": " day, perfect for a picnic."}
+    ],
+    "correctOrder": ["sunny"]
+  },
+  {
+    "type": "dropdown",
+    "level": "B1",
+    "topic": "Grammar - Connecting Words",
+    "questionText": "She speaks French _____, she also speaks German.",
+    "options": ["as well as", "in spite of", "due to", "whereas"],
+    "correctAnswer": "as well as"
+  },
+  {
+    "type": "multiple_choice",
+    "level": "B1",
+    "topic": "Vocabulary - Environmental Issues",
+    "questionText": "_____ is a major problem caused by factories.",
+    "options": ["Air pollution", "Recycling", "Composting", "Conservation"],
+    "correctAnswer": "Air pollution"
+  }
+]
