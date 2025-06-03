@@ -1,387 +1,383 @@
- [
-            // A1 Level Questions
-            {
-                type: 'multiple_choice',
-                level: 'A1',
-                questionText: 'What is your name?',
-                options: ['I am ten.', 'My name is Ana.', 'I live in London.', 'It is sunny.'],
-                correctAnswer: 'My name is Ana.'
-            },
-            {
-                type: 'fill_in_the_blank',
-                level: 'A1',
-                questionText: 'She ___ a student.',
-                sentenceParts: ['She ', ' a student.'],
-                correctAnswer: 'is'
-            },
-            {
-                type: 'drag_and_drop_sentence',
-                level: 'A1',
-                questionText: 'Complete the sentence: This is ___ apple.',
-                sentenceTemplate: 'This is [DROP_ZONE] apple.',
-                correctWords: ['an'],
-                dragWords: ['an', 'a', 'some', 'the']
-            },
-            {
-                type: 'dropdown',
-                level: 'A1',
-                questionText: 'Choose the correct word: Hello, how ___ you?',
-                sentenceParts: ['Hello, how ', ' you?'],
-                options: ['are', 'is', 'am'],
-                correctAnswer: 'are'
-            },
-            {
-                type: 'multiple_choice',
-                level: 'A1',
-                questionText: 'Which one is a fruit?',
-                options: ['Chair', 'Apple', 'Car', 'Book'],
-                correctAnswer: 'Apple'
-            },
-            {
-                type: 'fill_in_the_blank',
-                level: 'A1',
-                questionText: 'They ___ from Spain.',
-                sentenceParts: ['They ', ' from Spain.'],
-                correctAnswer: 'are'
-            },
-            {
-                type: 'drag_and_drop_sentence',
-                level: 'A1',
-                questionText: 'Complete the sentence: I ___ coffee.',
-                sentenceTemplate: 'I [DROP_ZONE] coffee.',
-                correctWords: ['like'],
-                dragWords: ['like', 'likes', 'liking', 'liked']
-            },
-            {
-                type: 'dropdown',
-                level: 'A1',
-                questionText: 'My brother ___ a new car.',
-                sentenceParts: ['My brother ', ' a new car.'],
-                options: ['has', 'have', 'had'],
-                correctAnswer: 'has'
-            },
-            {
-                type: 'multiple_choice',
-                level: 'A1',
-                questionText: 'What color is the sky?',
-                options: ['Red', 'Green', 'Blue', 'Yellow'],
-                correctAnswer: 'Blue'
-            },
-            {
-                type: 'fill_in_the_blank',
-                level: 'A1',
-                questionText: 'We ___ a big house.',
-                sentenceParts: ['We ', ' a big house.'],
-                correctAnswer: 'have'
-            },
-            {
-                type: 'multiple_choice',
-                level: 'A1',
-                questionText: 'Which one is a vegetable?',
-                options: ['Banana', 'Carrot', 'Orange', 'Strawberry'],
-                correctAnswer: 'Carrot'
-            },
-            {
-                type: 'drag_and_drop_sentence',
-                level: 'A1',
-                questionText: 'Complete the sentence: My name is Anna and I ___ from Italy.',
-                sentenceTemplate: 'My name is Anna and I [DROP_ZONE] from Italy.',
-                correctWords: ['am'],
-                dragWords: ['is', 'are', 'am']
-            },
-            // A2 Level Questions
-            {
-                type: 'multiple_choice',
-                level: 'A2',
-                questionText: 'What did you do yesterday?',
-                options: ['I go to the park.', 'I went to the park.', 'I am going to the park.', 'I will go to the park.'],
-                correctAnswer: 'I went to the park.'
-            },
-            {
-                type: 'fill_in_the_blank',
-                level: 'A2',
-                questionText: 'She is taller ___ her sister.',
-                sentenceParts: ['She is taller ', ' her sister.'],
-                correctAnswer: 'than'
-            },
-            {
-                type: 'drag_and_drop_sentence',
-                level: 'A2',
-                questionText: 'Complete the sentence: I usually ___ up at 7 AM.',
-                sentenceTemplate: 'I usually [DROP_ZONE] up at 7 AM.',
-                correctWords: ['get'],
-                dragWords: ['get', 'got', 'getting', 'gets']
-            },
-            {
-                type: 'dropdown',
-                level: 'A2',
-                questionText: 'They ___ watching TV now.',
-                sentenceParts: ['They ', ' watching TV now.'],
-                options: ['are', 'is', 'am'],
-                correctAnswer: 'are'
-            },
-            {
-                type: 'multiple_choice',
-                level: 'A2',
-                questionText: 'Which sentence uses the Present Continuous tense correctly?',
-                options: ['He plays football every day.', 'He is playing football now.', 'He played football yesterday.', 'He will play football tomorrow.'],
-                correctAnswer: 'He is playing football now.'
-            },
-            {
-                type: 'fill_in_the_blank',
-                level: 'A2',
-                questionText: 'We went ___ holiday last summer.',
-                sentenceParts: ['We went ', ' holiday last summer.'],
-                correctAnswer: 'on'
-            },
-            {
-                type: 'drag_and_drop_sentence',
-                level: 'A2',
-                questionText: 'Complete the sentence: The book is ___ the table.',
-                sentenceTemplate: 'The book is [DROP_ZONE] the table.',
-                correctWords: ['on'],
-                dragWords: ['on', 'in', 'under', 'next to']
-            },
-            {
-                type: 'dropdown',
-                level: 'A2',
-                questionText: 'She likes ___ pop music.',
-                sentenceParts: ['She likes ', ' pop music.'],
-                options: ['listening', 'to listen', 'listens'],
-                correctAnswer: 'listening'
-            },
-            {
-                type: 'multiple_choice',
-                level: 'A2',
-                questionText: 'What is the past simple of "eat"?',
-                options: ['eaten', 'ate', 'eat', 'eating'],
-                correctAnswer: 'ate'
-            },
-            {
-                type: 'fill_in_the_blank',
-                level: 'A2',
-                questionText: 'There are ___ people in the room.',
-                sentenceParts: ['There are ', ' people in the room.'],
-                correctAnswer: 'some'
-            },
-            {
-                type: 'drag_and_drop_sentence',
-                level: 'A2',
-                questionText: 'Complete the sentence: He ___ to London last year.',
-                sentenceTemplate: 'He [DROP_ZONE] to London last year.',
-                correctWords: ['went'],
-                dragWords: ['went', 'go', 'goes', 'gone']
-            },
-            {
-                type: 'dropdown',
-                level: 'A2',
-                questionText: "I'm going to ___ a cake for her birthday.",
-                sentenceParts: ["I'm going to ", " a cake for her birthday."],
-                options: ['make', 'do', 'take'],
-                correctAnswer: 'make'
-            },
-            {
-                type: 'multiple_choice',
-                level: 'A2',
-                questionText: "What does 'excuse me' mean?",
-                options: ['Hello', 'Sorry, I need to pass', 'Thank you', 'Goodbye'],
-                correctAnswer: 'Sorry, I need to pass'
-            },
-            {
-                type: 'fill_in_the_blank',
-                level: 'A2',
-                questionText: 'My birthday is ___ December 25th.',
-                sentenceParts: ['My birthday is ', ' December 25th.'],
-                correctAnswer: 'on'
-            },
-            // B1 Level Questions
-            {
-                type: 'multiple_choice',
-                level: 'B1',
-                questionText: 'If I had more time, I ___ learn a new language.',
-                options: ['will', 'would', 'can', 'should'],
-                correctAnswer: 'would'
-            },
-            {
-                type: 'fill_in_the_blank',
-                level: 'B1',
-                questionText: 'She has already ___ her homework.', // Adjusted question for single blank
-                sentenceParts: ['She has already ', ' her homework.'], // Only two parts for one blank
-                correctAnswer: 'done'
-            },
-            {
-                type: 'drag_and_drop_sentence',
-                level: 'B1',
-                questionText: 'They ___ working on the project for three hours.',
-                sentenceTemplate: 'They [DROP_ZONE] working on the project for three hours.',
-                correctWords: ['have been'],
-                dragWords: ['have been', 'has been', 'are', 'were']
-            },
-            {
-                type: 'dropdown',
-                level: 'B1',
-                questionText: "It's essential to ___ up with new ideas.",
-                sentenceParts: ["It's essential to ", " up with new ideas."],
-                options: ['come', 'go', 'get'],
-                correctAnswer: 'come'
-            },
-            {
-                type: 'multiple_choice',
-                level: 'B1',
-                questionText: 'Which sentence is in the passive voice?',
-                options: ['The dog chased the cat.', 'The cat was chased by the dog.', 'The cat chased the dog.', 'The dog is chasing the cat.'],
-                correctAnswer: 'The cat was chased by the dog.'
-            },
-            {
-                type: 'fill_in_the_blank',
-                level: 'B1',
-                questionText: 'He looks ___ he hasn\'t slept for days.',
-                sentenceParts: ['He looks ', ' he hasn\'t slept for days.'],
-                correctAnswer: 'as if'
-            },
-            {
-                type: 'drag_and_drop_sentence',
-                level: 'B1',
-                questionText: 'Despite the rain, we ___ a great time.',
-                sentenceTemplate: 'Despite the rain, we [DROP_ZONE] a great time.',
-                correctWords: ['had'],
-                dragWords: ['had', 'have', 'are having', 'will have']
-            },
-            {
-                type: 'dropdown',
-                level: 'B1',
-                questionText: 'If I ___ you, I would take that job.',
-                sentenceParts: ['If I ', ' you, I would take that job.'],
-                options: ['were', 'was', 'am'],
-                correctAnswer: 'were'
-            },
-            {
-                type: 'multiple_choice',
-                level: 'B1',
-                questionText: 'What does \'break down\' mean in "My car broke down on the way to work"?',
-                options: ['To become sad', 'To stop working', 'To divide into smaller parts', 'To lose control emotionally'],
-                correctAnswer: 'To stop working'
-            },
-            {
-                type: 'fill_in_the_blank',
-                level: 'B1',
-                questionText: 'The meeting was postponed ___ to unforeseen circumstances.',
-                sentenceParts: ['The meeting was postponed ', ' to unforeseen circumstances.'],
-                correctAnswer: 'due'
-            },
-            // B1 Level Reading Comprehension Questions
-            {
-                type: 'multiple_choice',
-                level: 'B1',
-                passage: {
-                    title: 'The Benefits of Reading',
-                    text: 'Reading is a powerful tool for personal growth and development. It not only expands your vocabulary and improves your writing skills but also enhances your critical thinking abilities. Engaging with diverse texts, from fiction to non-fiction, exposes you to new ideas and perspectives, fostering empathy and understanding. Moreover, reading can be a great stress-reliever, offering an escape into different worlds and narratives.'
-                },
-                questionText: 'According to the passage, which of the following is NOT a benefit of reading?',
-                options: ['Expands vocabulary', 'Improves writing skills', 'Reduces physical activity', 'Fosters empathy'],
-                correctAnswer: 'Reduces physical activity'
-            },
-            {
-                type: 'fill_in_the_blank',
-                level: 'B1',
-                passage: {
-                    title: 'The Benefits of Reading',
-                    text: 'Reading is a powerful tool for personal growth and development. It not only expands your vocabulary and improves your writing skills but also enhances your critical thinking abilities. Engaging with diverse texts, from fiction to non-fiction, exposes you to new ideas and perspectives, fostering empathy and understanding. Moreover, reading can be a great stress-reliever, offering an escape into different worlds and narratives.'
-                },
-                questionText: 'Reading can offer an escape into different worlds and ___ .',
-                sentenceParts: ['Reading can offer an escape into different worlds and ', ' .'],
-                correctAnswer: 'narratives'
-            },
-            {
-                type: 'dropdown',
-                level: 'B1',
-                passage: {
-                    title: 'The Benefits of Reading',
-                    text: 'Reading is a powerful tool for personal growth and development. It not only expands your vocabulary and improves your writing skills but also enhances your critical thinking abilities. Engaging with diverse texts, from fiction to non-fiction, exposes you to new ideas and perspectives, fostering empathy and understanding. Moreover, reading can be a great stress-reliever, offering an escape into different worlds and narratives.'
-                },
-                questionText: 'Engaging with diverse texts helps to ___ your perspectives.',
-                sentenceParts: ['Engaging with diverse texts helps to ', ' your perspectives.'],
-                options: ['narrow', 'broaden', 'limit', 'obscure'],
-                correctAnswer: 'broaden'
-            },
-            {
-                type: 'drag_and_drop_sentence',
-                level: 'B1',
-                passage: {
-                    title: 'The Benefits of Reading',
-                    text: 'Reading is a powerful tool for personal growth and development. It not only expands your vocabulary and improves your writing skills but also enhances your critical thinking abilities. Engaging with diverse texts, from fiction to non-fiction, exposes you to new ideas and perspectives, fostering empathy and understanding. Moreover, reading can be a great stress-reliever, offering an escape into different worlds and narratives.'
-                },
-                questionText: 'Reading can be a great ___ and helps improve critical thinking.',
-                sentenceTemplate: 'Reading can be a great [DROP_ZONE] and helps improve critical thinking.',
-                correctWords: ['stress-reliever'],
-                dragWords: ['hobby', 'stress-reliever', 'chore', 'challenge']
-            },
-            {
-                type: 'multiple_choice',
-                level: 'B1',
-                passage: {
-                    title: 'The Benefits of Reading',
-                    text: 'Reading is a powerful tool for personal growth and development. It not only expands your vocabulary and improves your writing skills but also enhances your critical thinking abilities. Engaging with diverse texts, from fiction to non-fiction, exposes you to new ideas and perspectives, fostering empathy and understanding. Moreover, reading can be a great stress-reliever, offering an escape into different worlds and narratives.'
-                },
-                questionText: 'What type of texts are mentioned as beneficial?',
-                options: ['Only fiction', 'Only non-fiction', 'Fiction and non-fiction', 'Magazines only'],
-                correctAnswer: 'Fiction and non-fiction'
-            },
-            {
-                type: 'fill_in_the_blank',
-                level: 'B1',
-                passage: {
-                    title: 'The Future of Renewable Energy',
-                    text: 'Renewable energy sources, such as solar, wind, and hydropower, are becoming increasingly important in the global effort to combat climate change. Unlike fossil fuels, which are finite and contribute to greenhouse gas emissions, renewables offer a sustainable alternative. While initial investment costs can be high, the long-term benefits include reduced environmental impact, energy independence, and stable operating costs. Governments and industries worldwide are investing heavily in renewable energy technologies to ensure a greener future.'
-                },
-                questionText: 'Fossil fuels are finite and contribute to ___ gas emissions.',
-                sentenceParts: ['Fossil fuels are finite and contribute to ', ' gas emissions.'],
-                correctAnswer: 'greenhouse'
-            },
-            {
-                type: 'multiple_choice',
-                level: 'B1',
-                passage: {
-                    title: 'The Future of Renewable Energy',
-                    text: 'Renewable energy sources, such as solar, wind, and hydropower, are becoming increasingly important in the global effort to combat climate change. Unlike fossil fuels, which are finite and contribute to greenhouse gas emissions, renewables offer a sustainable alternative. While initial investment costs can be high, the long-term benefits include reduced environmental impact, energy independence, and stable operating costs. Governments and industries worldwide are investing heavily in renewable energy technologies to ensure a greener future.'
-                },
-                questionText: 'Which of these is NOT mentioned as a renewable energy source?',
-                options: ['Solar', 'Coal', 'Wind', 'Hydropower'],
-                correctAnswer: 'Coal'
-            },
-            {
-                type: 'drag_and_drop_sentence',
-                level: 'B1',
-                passage: {
-                    title: 'The Future of Renewable Energy',
-                    text: 'Renewable energy sources, such as solar, wind, and hydropower, are becoming increasingly important in the global effort to combat climate change. Unlike fossil fuels, which are finite and contribute to greenhouse gas emissions, renewables offer a sustainable alternative. While initial investment costs can be high, the long-term benefits include reduced environmental impact, energy independence, and stable operating costs. Governments and industries worldwide are investing heavily in renewable energy technologies to ensure a greener future.'
-                },
-                questionText: 'A long-term benefit of renewables is reduced environmental ___.',
-                sentenceTemplate: 'A long-term benefit of renewables is reduced environmental [DROP_ZONE].',
-                correctWords: ['impact'],
-                dragWords: ['impact', 'cost', 'problem', 'burden']
-            },
-            {
-                type: 'dropdown',
-                level: 'B1',
-                passage: {
-                    title: 'The Future of Renewable Energy',
-                    text: 'Renewable energy sources, such as solar, wind, and hydropower, are becoming increasingly important in the global effort to combat climate change. Unlike fossil fuels, which are finite and contribute to greenhouse gas emissions, renewables offer a sustainable alternative. While initial investment costs can be high, the long-term benefits include reduced environmental impact, energy independence, and stable operating costs. Governments and industries worldwide are investing heavily in renewable energy technologies to ensure a greener future.'
-                },
-                questionText: 'Governments and industries are investing heavily to ensure a ___ future.',
-                sentenceParts: ['Governments and industries are investing heavily to ensure a ', ' future.'],
-                options: ['darker', 'uncertain', 'greener', 'costly'],
-                correctAnswer: 'greener'
-            },
-            {
-                type: 'fill_in_the_blank',
-                level: 'B1',
-                passage: {
-                    title: 'The Future of Renewable Energy',
-                    text: 'Renewable energy sources, such as solar, wind, and hydropower, are becoming increasingly important in the global effort to combat climate change. Unlike fossil fuels, which are finite and contribute to greenhouse gas emissions, renewables offer a sustainable alternative. While initial investment costs can be high, the long-term benefits include reduced environmental impact, energy independence, and stable operating costs. Governments and industries worldwide are investing heavily in renewable energy technologies to ensure a greener future.'
-                },
-                questionText: 'Renewable energy sources offer a ___ alternative to fossil fuels.',
-                sentenceParts: ['Renewable energy sources offer a ', ' alternative to fossil fuels.'],
-                correctAnswer: 'sustainable'
-            }
+[
+    {
+        "type": "multiple_choice",
+        "level": "A1",
+        "questionText": "What is your name?",
+        "options": ["I am ten.", "My name is Ana.", "I live in London.", "It is sunny."],
+        "correctAnswer": "My name is Ana."
+    },
+    {
+        "type": "fill_in_the_blank",
+        "level": "A1",
+        "questionText": "She ___ a student.",
+        "sentenceParts": ["She ", " a student."],
+        "correctAnswer": "is"
+    },
+    {
+        "type": "drag_and_drop_sentence",
+        "level": "A1",
+        "questionText": "Complete the sentence: This is ___ apple.",
+        "sentenceTemplate": "This is [DROP_ZONE] apple.",
+        "correctWords": ["an"],
+        "dragWords": ["an", "a", "some", "the"]
+    },
+    {
+        "type": "dropdown",
+        "level": "A1",
+        "questionText": "Choose the correct word: Hello, how ___ you?",
+        "sentenceParts": ["Hello, how ", " you?"],
+        "options": ["are", "is", "am"],
+        "correctAnswer": "are"
+    },
+    {
+        "type": "multiple_choice",
+        "level": "A1",
+        "questionText": "Which one is a fruit?",
+        "options": ["Chair", "Apple", "Car", "Book"],
+        "correctAnswer": "Apple"
+    },
+    {
+        "type": "fill_in_the_blank",
+        "level": "A1",
+        "questionText": "They ___ from Spain.",
+        "sentenceParts": ["They ", " from Spain."],
+        "correctAnswer": "are"
+    },
+    {
+        "type": "drag_and_drop_sentence",
+        "level": "A1",
+        "questionText": "Complete the sentence: I ___ coffee.",
+        "sentenceTemplate": "I [DROP_ZONE] coffee.",
+        "correctWords": ["like"],
+        "dragWords": ["like", "likes", "liking", "liked"]
+    },
+    {
+        "type": "dropdown",
+        "level": "A1",
+        "questionText": "My brother ___ a new car.",
+        "sentenceParts": ["My brother ", " a new car."],
+        "options": ["has", "have", "had"],
+        "correctAnswer": "has"
+    },
+    {
+        "type": "multiple_choice",
+        "level": "A1",
+        "questionText": "What color is the sky?",
+        "options": ["Red", "Green", "Blue", "Yellow"],
+        "correctAnswer": "Blue"
+    },
+    {
+        "type": "fill_in_the_blank",
+        "level": "A1",
+        "questionText": "We ___ a big house.",
+        "sentenceParts": ["We ", " a big house."],
+        "correctAnswer": "have"
+    },
+    {
+        "type": "multiple_choice",
+        "level": "A1",
+        "questionText": "Which one is a vegetable?",
+        "options": ["Banana", "Carrot", "Orange", "Strawberry"],
+        "correctAnswer": "Carrot"
+    },
+    {
+        "type": "drag_and_drop_sentence",
+        "level": "A1",
+        "questionText": "Complete the sentence: My name is Anna and I ___ from Italy.",
+        "sentenceTemplate": "My name is Anna and I [DROP_ZONE] from Italy.",
+        "correctWords": ["am"],
+        "dragWords": ["is", "are", "am"]
+    },
+    {
+        "type": "multiple_choice",
+        "level": "A2",
+        "questionText": "What did you do yesterday?",
+        "options": ["I go to the park.", "I went to the park.", "I am going to the park.", "I will go to the park."],
+        "correctAnswer": "I went to the park."
+    },
+    {
+        "type": "fill_in_the_blank",
+        "level": "A2",
+        "questionText": "She is taller ___ her sister.",
+        "sentenceParts": ["She is taller ", " her sister."],
+        "correctAnswer": "than"
+    },
+    {
+        "type": "drag_and_drop_sentence",
+        "level": "A2",
+        "questionText": "Complete the sentence: I usually ___ up at 7 AM.",
+        "sentenceTemplate": "I usually [DROP_ZONE] up at 7 AM.",
+        "correctWords": ["get"],
+        "dragWords": ["get", "got", "getting", "gets"]
+    },
+    {
+        "type": "dropdown",
+        "level": "A2",
+        "questionText": "They ___ watching TV now.",
+        "sentenceParts": ["They ", " watching TV now."],
+        "options": ["are", "is", "am"],
+        "correctAnswer": "are"
+    },
+    {
+        "type": "multiple_choice",
+        "level": "A2",
+        "questionText": "Which sentence uses the Present Continuous tense correctly?",
+        "options": ["He plays football every day.", "He is playing football now.", "He played football yesterday.", "He will play football tomorrow."],
+        "correctAnswer": "He is playing football now."
+    },
+    {
+        "type": "fill_in_the_blank",
+        "level": "A2",
+        "questionText": "We went ___ holiday last summer.",
+        "sentenceParts": ["We went ", " holiday last summer."],
+        "correctAnswer": "on"
+    },
+    {
+        "type": "drag_and_drop_sentence",
+        "level": "A2",
+        "questionText": "Complete the sentence: The book is ___ the table.",
+        "sentenceTemplate": "The book is [DROP_ZONE] the table.",
+        "correctWords": ["on"],
+        "dragWords": ["on", "in", "under", "next to"]
+    },
+    {
+        "type": "dropdown",
+        "level": "A2",
+        "questionText": "She likes ___ pop music.",
+        "sentenceParts": ["She likes ", " pop music."],
+        "options": ["listening", "to listen", "listens"],
+        "correctAnswer": "listening"
+    },
+    {
+        "type": "multiple_choice",
+        "level": "A2",
+        "questionText": "What is the past simple of \"eat\"?",
+        "options": ["eaten", "ate", "eat", "eating"],
+        "correctAnswer": "ate"
+    },
+    {
+        "type": "fill_in_the_blank",
+        "level": "A2",
+        "questionText": "There are ___ people in the room.",
+        "sentenceParts": ["There are ", " people in the room."],
+        "correctAnswer": "some"
+    },
+    {
+        "type": "drag_and_drop_sentence",
+        "level": "A2",
+        "questionText": "Complete the sentence: He ___ to London last year.",
+        "sentenceTemplate": "He [DROP_ZONE] to London last year.",
+        "correctWords": ["went"],
+        "dragWords": ["went", "go", "goes", "gone"]
+    },
+    {
+        "type": "dropdown",
+        "level": "A2",
+        "questionText": "I'm going to ___ a cake for her birthday.",
+        "sentenceParts": ["I'm going to ", " a cake for her birthday."],
+        "options": ["make", "do", "take"],
+        "correctAnswer": "make"
+    },
+    {
+        "type": "multiple_choice",
+        "level": "A2",
+        "questionText": "What does 'excuse me' mean?",
+        "options": ["Hello", "Sorry, I need to pass", "Thank you", "Goodbye"],
+        "correctAnswer": "Sorry, I need to pass"
+    },
+    {
+        "type": "fill_in_the_blank",
+        "level": "A2",
+        "questionText": "My birthday is ___ December 25th.",
+        "sentenceParts": ["My birthday is ", " December 25th."],
+        "correctAnswer": "on"
+    },
+    {
+        "type": "multiple_choice",
+        "level": "B1",
+        "questionText": "If I had more time, I ___ learn a new language.",
+        "options": ["will", "would", "can", "should"],
+        "correctAnswer": "would"
+    },
+    {
+        "type": "fill_in_the_blank",
+        "level": "B1",
+        "questionText": "She has already ___ her homework.",
+        "sentenceParts": ["She has already ", " her homework."],
+        "correctAnswer": "done"
+    },
+    {
+        "type": "drag_and_drop_sentence",
+        "level": "B1",
+        "questionText": "They ___ working on the project for three hours.",
+        "sentenceTemplate": "They [DROP_ZONE] working on the project for three hours.",
+        "correctWords": ["have been"],
+        "dragWords": ["have been", "has been", "are", "were"]
+    },
+    {
+        "type": "dropdown",
+        "level": "B1",
+        "questionText": "It's essential to ___ up with new ideas.",
+        "sentenceParts": ["It's essential to ", " up with new ideas."],
+        "options": ["come", "go", "get"],
+        "correctAnswer": "come"
+    },
+    {
+        "type": "multiple_choice",
+        "level": "B1",
+        "questionText": "Which sentence is in the passive voice?",
+        "options": ["The dog chased the cat.", "The cat was chased by the dog.", "The cat chased the dog.", "The dog is chasing the cat."],
+        "correctAnswer": "The cat was chased by the dog."
+    },
+    {
+        "type": "fill_in_the_blank",
+        "level": "B1",
+        "questionText": "He looks ___ he hasn't slept for days.",
+        "sentenceParts": ["He looks ", " he hasn't slept for days."],
+        "correctAnswer": "as if"
+    },
+    {
+        "type": "drag_and_drop_sentence",
+        "level": "B1",
+        "questionText": "Despite the rain, we ___ a great time.",
+        "sentenceTemplate": "Despite the rain, we [DROP_ZONE] a great time.",
+        "correctWords": ["had"],
+        "dragWords": ["had", "have", "are having", "will have"]
+    },
+    {
+        "type": "dropdown",
+        "level": "B1",
+        "questionText": "If I ___ you, I would take that job.",
+        "sentenceParts": ["If I ", " you, I would take that job."],
+        "options": ["were", "was", "am"],
+        "correctAnswer": "were"
+    },
+    {
+        "type": "multiple_choice",
+        "level": "B1",
+        "questionText": "What does 'break down' mean in \"My car broke down on the way to work\"?",
+        "options": ["To become sad", "To stop working", "To divide into smaller parts", "To lose control emotionally"],
+        "correctAnswer": "To stop working"
+    },
+    {
+        "type": "fill_in_the_blank",
+        "level": "B1",
+        "questionText": "The meeting was postponed ___ to unforeseen circumstances.",
+        "sentenceParts": ["The meeting was postponed ", " to unforeseen circumstances."],
+        "correctAnswer": "due"
+    },
+    {
+        "type": "multiple_choice",
+        "level": "B1",
+        "passage": {
+            "title": "The Benefits of Reading",
+            "text": "Reading is a powerful tool for personal growth and development. It not only expands your vocabulary and improves your writing skills but also enhances your critical thinking abilities. Engaging with diverse texts, from fiction to non-fiction, exposes you to new ideas and perspectives, fostering empathy and understanding. Moreover, reading can be a great stress-reliever, offering an escape into different worlds and narratives."
+        },
+        "questionText": "According to the passage, which of the following is NOT a benefit of reading?",
+        "options": ["Expands vocabulary", "Improves writing skills", "Reduces physical activity", "Fosters empathy"],
+        "correctAnswer": "Reduces physical activity"
+    },
+    {
+        "type": "fill_in_the_blank",
+        "level": "B1",
+        "passage": {
+            "title": "The Benefits of Reading",
+            "text": "Reading is a powerful tool for personal growth and development. It not only expands your vocabulary and improves your writing skills but also enhances your critical thinking abilities. Engaging with diverse texts, from fiction to non-fiction, exposes you to new ideas and perspectives, fostering empathy and understanding. Moreover, reading can be a great stress-reliever, offering an escape into different worlds and narratives."
+        },
+        "questionText": "Reading can offer an escape into different worlds and ___ .",
+        "sentenceParts": ["Reading can offer an escape into different worlds and ", " ."],
+        "correctAnswer": "narratives"
+    },
+    {
+        "type": "dropdown",
+        "level": "B1",
+        "passage": {
+            "title": "The Benefits of Reading",
+            "text": "Reading is a powerful tool for personal growth and development. It not only expands your vocabulary and improves your writing skills but also enhances your critical thinking abilities. Engaging with diverse texts, from fiction to non-fiction, exposes you to new ideas and perspectives, fostering empathy and understanding. Moreover, reading can be a great stress-reliever, offering an escape into different worlds and narratives."
+        },
+        "questionText": "Engaging with diverse texts helps to ___ your perspectives.",
+        "sentenceParts": ["Engaging with diverse texts helps to ", " your perspectives."],
+        "options": ["narrow", "broaden", "limit", "obscure"],
+        "correctAnswer": "broaden"
+    },
+    {
+        "type": "drag_and_drop_sentence",
+        "level": "B1",
+        "passage": {
+            "title": "The Benefits of Reading",
+            "text": "Reading is a powerful tool for personal growth and development. It not only expands your vocabulary and improves your writing skills but also enhances your critical thinking abilities. Engaging with diverse texts, from fiction to non-fiction, exposes you to new ideas and perspectives, fostering empathy and understanding. Moreover, reading can be a great stress-reliever, offering an escape into different worlds and narratives."
+        },
+        "questionText": "Reading can be a great ___ and helps improve critical thinking.",
+        "sentenceTemplate": "Reading can be a great [DROP_ZONE] and helps improve critical thinking.",
+        "correctWords": ["stress-reliever"],
+        "dragWords": ["hobby", "stress-reliever", "chore", "challenge"]
+    },
+    {
+        "type": "multiple_choice",
+        "level": "B1",
+        "passage": {
+            "title": "The Benefits of Reading",
+            "text": "Reading is a powerful tool for personal growth and development. It not only expands your vocabulary and improves your writing skills but also enhances your critical thinking abilities. Engaging with diverse texts, from fiction to non-fiction, exposes you to new ideas and perspectives, fostering empathy and understanding. Moreover, reading can be a great stress-reliever, offering an escape into different worlds and narratives."
+        },
+        "questionText": "What type of texts are mentioned as beneficial?",
+        "options": ["Only fiction", "Only non-fiction", "Fiction and non-fiction", "Magazines only"],
+        "correctAnswer": "Fiction and non-fiction"
+    },
+    {
+        "type": "fill_in_the_blank",
+        "level": "B1",
+        "passage": {
+            "title": "The Future of Renewable Energy",
+            "text": "Renewable energy sources, such as solar, wind, and hydropower, are becoming increasingly important in the global effort to combat climate change. Unlike fossil fuels, which are finite and contribute to greenhouse gas emissions, renewables offer a sustainable alternative. While initial investment costs can be high, the long-term benefits include reduced environmental impact, energy independence, and stable operating costs. Governments and industries worldwide are investing heavily in renewable energy technologies to ensure a greener future."
+        },
+        "questionText": "Fossil fuels are finite and contribute to ___ gas emissions.",
+        "sentenceParts": ["Fossil fuels are finite and contribute to ", " gas emissions."],
+        "correctAnswer": "greenhouse"
+    },
+    {
+        "type": "multiple_choice",
+        "level": "B1",
+        "passage": {
+            "title": "The Future of Renewable Energy",
+            "text": "Renewable energy sources, such as solar, wind, and hydropower, are becoming increasingly important in the global effort to combat climate change. Unlike fossil fuels, which are finite and contribute to greenhouse gas emissions, renewables offer a sustainable alternative. While initial investment costs can be high, the long-term benefits include reduced environmental impact, energy independence, and stable operating costs. Governments and industries worldwide are investing heavily in renewable energy technologies to ensure a greener future."
+        },
+        "questionText": "Which of these is NOT mentioned as a renewable energy source?",
+        "options": ["Solar", "Coal", "Wind", "Hydropower"],
+        "correctAnswer": "Coal"
+    },
+    {
+        "type": "drag_and_drop_sentence",
+        "level": "B1",
+        "passage": {
+            "title": "The Future of Renewable Energy",
+            "text": "Renewable energy sources, such as solar, wind, and hydropower, are becoming increasingly important in the global effort to combat climate change. Unlike fossil fuels, which are finite and contribute to greenhouse gas emissions, renewables offer a sustainable alternative. While initial investment costs can be high, the long-term benefits include reduced environmental impact, energy independence, and stable operating costs. Governments and industries worldwide are investing heavily in renewable energy technologies to ensure a greener future."
+        },
+        "questionText": "A long-term benefit of renewables is reduced environmental ___.",
+        "sentenceTemplate": "A long-term benefit of renewables is reduced environmental [DROP_ZONE].",
+        "correctWords": ["impact"],
+        "dragWords": ["impact", "cost", "problem", "burden"]
+    },
+    {
+        "type": "dropdown",
+        "level": "B1",
+        "passage": {
+            "title": "The Future of Renewable Energy",
+            "text": "Renewable energy sources, such as solar, wind, and hydropower, are becoming increasingly important in the global effort to combat climate change. Unlike fossil fuels, which are finite and contribute to greenhouse gas emissions, renewables offer a sustainable alternative. While initial investment costs can be high, the long-term benefits include reduced environmental impact, energy independence, and stable operating costs. Governments and industries worldwide are investing heavily in renewable energy technologies to ensure a greener future."
+        },
+        "questionText": "Governments and industries are investing heavily to ensure a ___ future.",
+        "sentenceParts": ["Governments and industries are investing heavily to ensure a ", " future."],
+        "options": ["darker", "uncertain", "greener", "costly"],
+        "correctAnswer": "greener"
+    },
+    {
+        "type": "fill_in_the_blank",
+        "level": "B1",
+        "passage": {
+            "title": "The Future of Renewable Energy",
+            "text": "Renewable energy sources, such as solar, wind, and hydropower, are becoming increasingly important in the global effort to combat climate change. Unlike fossil fuels, which are finite and contribute to greenhouse gas emissions, renewables offer a sustainable alternative. While initial investment costs can be high, the long-term benefits include reduced environmental impact, energy independence, and stable operating costs. Governments and industries worldwide are investing heavily in renewable energy technologies to ensure a greener future."
+        },
+        "questionText": "Renewable energy sources offer a ___ alternative to fossil fuels.",
+        "sentenceParts": ["Renewable energy sources offer a ", " alternative to fossil fuels."],
+        "correctAnswer": "sustainable"
+    }
 ]
