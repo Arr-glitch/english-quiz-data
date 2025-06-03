@@ -40,7 +40,7 @@ function shuffleQuestionsAndAnswers(questionsArray) {
 
         // Shuffle options for multiple_choice and dropdown questions
         if (question.options && Array.isArray(question.options)) {
-            shuffledQuestion.options = shuffleArray(question.options);
+            shuffledQuestion.options = shuffleArray(shuffledQuestion.options); // Shuffle the copy's options
         }
 
         // Handle reading passage questions with sub-questions
@@ -372,19 +372,21 @@ function displayDragAndDrop(question) {
     html += `<p>Available words:</p>`;
 
     const userAnswerArray = userAnswers[currentQuestionIndex];
-    const isAnswered = checkIfAnswered(); // Use the general checkIfAnswered for the whole question
+    const isAnswered = checkIfAnswered();
 
-    // Collect all unique options from all blanks
     const allOptions = [];
-    question.blanks.forEach(blank => {
-        if (blank.options && Array.isArray(blank.options)) {
-            blank.options.forEach(option => {
-                if (!allOptions.includes(option)) {
-                    allOptions.push(option);
-                }
-            });
-        }
-    });
+    // Collect all unique options from all blanks' options (if provided)
+    if (question.blanks) { // Ensure blanks exist
+        question.blanks.forEach(blank => {
+            if (blank.options && Array.isArray(blank.options)) {
+                blank.options.forEach(option => {
+                    if (!allOptions.includes(option)) {
+                        allOptions.push(option);
+                    }
+                });
+            }
+        });
+    }
 
     // Also add correct answers to options if not already included, to ensure they are draggable
     if (question.correctOrder && Array.isArray(question.correctOrder)) {
@@ -395,21 +397,32 @@ function displayDragAndDrop(question) {
         });
     }
 
-    // Shuffle the drag items only if not answered, otherwise keep original order for consistency in feedback
     const shuffledOptions = isAnswered ? allOptions : shuffleArray(allOptions);
 
     shuffledOptions.forEach(option => {
-        // Check if this option has already been used in an answered blank for current question
-        const isUsed = isAnswered && userAnswerArray.includes(option);
+        const isUsed = isAnswered && userAnswerArray && userAnswerArray.includes(option);
         html += `<span class="drag-item ${isUsed ? 'used-item' : ''}" draggable="${isAnswered ? 'false' : 'true'}" ondragstart="drag(event)" data-word="${option}">${option}</span>`;
     });
 
     html += `<br><br>`;
 
-    // Create the sentence with drop zones
-    question.blanks.forEach((blank, index) => {
-        const currentDroppedWord = (userAnswerArray && userAnswerArray[index] !== null) ? userAnswerArray[index] : null;
-        const correctWord = question.correctOrder ? question.correctOrder[index] : null;
+    // Reconstruct the sentence with drop zones based on correctOrder.length
+    // Assuming question.blanks contains sentence parts and we insert a drop zone for each correctOrder item.
+    // The number of drop zones should match correctOrder.length.
+    // The sentence parts in question.blanks should be correctly interleaved.
+    let sentenceParts = question.blanks.map(b => b.sentencePart); // Extract just the sentence parts
+
+    let sentenceWithBlanksHtml = '';
+    const numBlanks = question.correctOrder ? question.correctOrder.length : 0;
+
+    for (let i = 0; i < numBlanks; i++) { // Iterate based on the number of expected answers
+        // Add the text part before the current blank
+        if (sentenceParts[i]) {
+            sentenceWithBlanksHtml += sentenceParts[i];
+        }
+
+        const currentDroppedWord = (userAnswerArray && userAnswerArray[i] !== null) ? userAnswerArray[i] : null;
+        const correctWord = question.correctOrder[i];
         const dropZoneIsCorrect = isAnswered && currentDroppedWord === correctWord;
         const dropZoneIsIncorrect = isAnswered && currentDroppedWord !== correctWord && currentDroppedWord !== null;
 
@@ -422,22 +435,28 @@ function displayDragAndDrop(question) {
             }
         }
 
-        // Disable drop events if the question is already answered or this specific blank is filled
-        const disableDropForBlank = isAnswered || (userAnswerArray && userAnswerArray[index] !== null);
+        const disableDropForBlank = isAnswered || (userAnswerArray && userAnswerArray[i] !== null);
         const dropEvents = disableDropForBlank ? '' : `ondrop="drop(event)" ondragover="allowDrop(event)"`;
 
-        html += blank.sentencePart;
-        html += `<span class="${dropZoneClass}" ${dropEvents} data-blank="${index}">
+        sentenceWithBlanksHtml += `<span class="${dropZoneClass}" ${dropEvents} data-blank="${i}">
             ${currentDroppedWord || 'Drop here'}
         </span>`;
 
         if (isAnswered && dropZoneIsIncorrect) {
-            html += `<span style="color: #d32f2f; font-weight: bold; margin-left: 5px;">(Correct: ${correctWord})</span>`;
+            sentenceWithBlanksHtml += `<span style="color: #d32f2f; font-weight: bold; margin-left: 5px;">(Correct: ${correctWord})</span>`;
         } else if (isAnswered && dropZoneIsCorrect) {
-             html += `<span style="color: #4caf50; font-weight: bold; margin-left: 5px;">(Correct!)</span>`;
+             sentenceWithBlanksHtml += `<span style="color: #4caf50; font-weight: bold; margin-left: 5px;">(Correct!)</span>`;
         }
-    });
+    }
 
+    // Add any remaining sentence parts after the last blank
+    if (sentenceParts.length > numBlanks) {
+        for (let i = numBlanks; i < sentenceParts.length; i++) {
+            sentenceWithBlanksHtml += sentenceParts[i];
+        }
+    }
+
+    html += sentenceWithBlanksHtml;
     html += `</div>`;
     return html;
 }
