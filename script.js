@@ -4,7 +4,7 @@
 const githubJsonUrl = 'https://Arr-glitch.github.io/english-quiz-data/B1.json';
 
 // Global variables to manage quiz state
-let questions = []; 
+let questions = [];
 let originalQuestions = []; // Store original questions for restart
 let currentQuestionIndex = 0;
 let userAnswers = [];
@@ -57,18 +57,8 @@ function shuffleQuestionsAndAnswers(questionsArray) {
         }
 
         // Handle drag and drop questions by shuffling the available words/options
-        if (question.type === 'drag_and_drop' && question.blanks) {
-            shuffledQuestion.blanks = question.blanks.map(blank => {
-                if (blank.options && Array.isArray(blank.options)) {
-                    return {
-                        ...blank,
-                        options: shuffleArray(blank.options)
-                    };
-                }
-                return blank;
-            });
-        }
-
+        // The individual blank options are not shuffled for drag and drop, only the list of available drag items.
+        // The `blanks` array order within the question remains the same for sentence structure.
         return shuffledQuestion;
     });
 }
@@ -132,6 +122,7 @@ function initializeQuiz() {
     updateProgress(); // Update progress bar and text
     displayQuestion(); // Display the first question
     updateScore(); // Update score display
+    updateNextButtonState(); // Update next button state initially
 }
 
 /**
@@ -195,6 +186,7 @@ function displayQuestion() {
 
     // Ensure progress is updated after question display
     updateProgress();
+    updateNextButtonState(); // Update next button state after new question is displayed
 }
 
 /**
@@ -204,27 +196,29 @@ function displayQuestion() {
  */
 function displayMultipleChoice(question) {
     let html = `<div class="question-text">${question.questionText}</div><div class="options">`;
+    const isAnswered = userAnswers[currentQuestionIndex] !== null;
 
     question.options.forEach((option, index) => {
         const letter = String.fromCharCode(65 + index); // A, B, C, D...
         const isSelected = userAnswers[currentQuestionIndex] === option;
-        const isAnswered = userAnswers[currentQuestionIndex] !== null;
-        const isCorrect = isAnswered && option === question.correctAnswer;
-        const isIncorrect = isAnswered && isSelected && option !== question.correctAnswer;
+        const isCorrectOption = option === question.correctAnswer;
 
         let optionClass = '';
-        if (isCorrect) {
-            optionClass = 'correct'; // Apply correct styling
-        } else if (isIncorrect) {
-            optionClass = 'incorrect'; // Apply incorrect styling
+        if (isAnswered) {
+            if (isCorrectOption) {
+                optionClass = 'correct'; // Always show correct answer if answered
+            } else if (isSelected && !isCorrectOption) {
+                optionClass = 'incorrect'; // Show incorrect if selected and wrong
+            }
         } else if (isSelected) {
-            optionClass = 'selected'; // Apply selected styling
+            optionClass = 'selected'; // Show selected if not yet answered
         }
 
-        // Add onclick event to select the option
+        // Disable clicks if already answered
+        const clickHandler = isAnswered ? '' : `onclick="selectOption('${option.replace(/'/g, "\\'")}')"`;
+
         html += `
-            <div class="option ${optionClass}"
-                 onclick="selectOption('${option.replace(/'/g, "\\'")}')">
+            <div class="option ${optionClass}" ${clickHandler}>
                 <span class="option-letter">${letter}</span>
                 <span>${option}</span>
             </div>
@@ -242,20 +236,37 @@ function displayMultipleChoice(question) {
  */
 function displayFillInTheBlank(question) {
     let html = `<div class="question-text">`;
+    const userAnswer = userAnswers[currentQuestionIndex];
+    const isAnswered = userAnswer !== null && userAnswer !== undefined;
+    const correct = isAnswered && isCorrect(currentQuestionIndex);
 
+    let inputClass = 'fill-blank-input';
+    if (isAnswered) {
+        inputClass += correct ? ' correct-input' : ' incorrect-input';
+    }
+    const disabledAttr = isAnswered ? 'disabled' : '';
+
+    const currentInputValue = userAnswer || '';
+
+    let blankHtml;
     if (question.sentenceParts) {
-        // If sentenceParts are provided (e.g., ["Part 1", "Part 2"])
-        html += question.sentenceParts[0];
-        html += `<input type="text" class="fill-blank-input"
-                         value="${userAnswers[currentQuestionIndex] || ''}"
-                         onchange="setAnswer(this.value)" placeholder="Type your answer here">`;
-        html += question.sentenceParts[1];
+        blankHtml = `<input type="text" class="${inputClass}"
+                         value="${currentInputValue}"
+                         onchange="setAnswer(this.value)" placeholder="Type your answer here" ${disabledAttr}>`;
+        html += question.sentenceParts[0] + blankHtml + question.sentenceParts[1];
     } else {
-        // Fallback if only questionText is provided with a blank placeholder
-        html += question.questionText.replace('_____',
-            `<input type="text" class="fill-blank-input"
-                     value="${userAnswers[currentQuestionIndex] || ''}"
-                     onchange="setAnswer(this.value)" placeholder="Type your answer here">`);
+        blankHtml = `<input type="text" class="${inputClass}"
+                     value="${currentInputValue}"
+                     onchange="setAnswer(this.value)" placeholder="Type your answer here" ${disabledAttr}>`;
+        html += question.questionText.replace('_____', blankHtml);
+    }
+
+    if (isAnswered) {
+        if (!correct) {
+            html += `<p style="color: #d32f2f; margin-top: 10px; font-weight: bold;">Correct answer: ${question.correctAnswer}</p>`;
+        } else {
+             html += `<p style="color: #4caf50; margin-top: 10px; font-weight: bold;">Correct!</p>`;
+        }
     }
 
     html += '</div>';
@@ -268,29 +279,29 @@ function displayFillInTheBlank(question) {
  * @returns {string} HTML string for the dropdown question.
  */
 function displayDropdown(question) {
-    // For simplicity, treating dropdown as multiple choice visually.
-    // A true dropdown would use <select> and <option> elements.
     let html = `<div class="question-text">${question.questionText}</div><div class="options">`;
+    const isAnswered = userAnswers[currentQuestionIndex] !== null;
 
     question.options.forEach((option, index) => {
         const letter = String.fromCharCode(65 + index);
         const isSelected = userAnswers[currentQuestionIndex] === option;
-        const isAnswered = userAnswers[currentQuestionIndex] !== null;
-        const isCorrect = isAnswered && option === question.correctAnswer;
-        const isIncorrect = isAnswered && isSelected && option !== question.correctAnswer;
+        const isCorrectOption = option === question.correctAnswer;
 
         let optionClass = '';
-        if (isCorrect) {
-            optionClass = 'correct';
-        } else if (isIncorrect) {
-            optionClass = 'incorrect';
+        if (isAnswered) {
+            if (isCorrectOption) {
+                optionClass = 'correct';
+            } else if (isSelected && !isCorrectOption) {
+                optionClass = 'incorrect';
+            }
         } else if (isSelected) {
             optionClass = 'selected';
         }
 
+        const clickHandler = isAnswered ? '' : `onclick="selectOption('${option.replace(/'/g, "\\'")}')"`;
+
         html += `
-            <div class="option ${optionClass}"
-                 onclick="selectOption('${option.replace(/'/g, "\\'")}')">
+            <div class="option ${optionClass}" ${clickHandler}>
                 <span class="option-letter">${letter}</span>
                 <span>${option}</span>
             </div>
@@ -316,26 +327,28 @@ function displayReadingPassage(question) {
     if (question.questions && question.questions.length > 0) {
         const subQuestion = question.questions[0]; // Assuming only one sub-question per passage for now
         html += `<div class="question-text">${subQuestion.questionText}</div><div class="options">`;
+        const isAnswered = userAnswers[currentQuestionIndex] !== null;
 
         subQuestion.options.forEach((option, index) => {
             const letter = String.fromCharCode(65 + index);
             const isSelected = userAnswers[currentQuestionIndex] === option;
-            const isAnswered = userAnswers[currentQuestionIndex] !== null;
-            const isCorrect = isAnswered && option === subQuestion.correctAnswer;
-            const isIncorrect = isAnswered && isSelected && option !== subQuestion.correctAnswer;
+            const isCorrectOption = option === subQuestion.correctAnswer;
 
             let optionClass = '';
-            if (isCorrect) {
-                optionClass = 'correct';
-            } else if (isIncorrect) {
-                optionClass = 'incorrect';
+            if (isAnswered) {
+                if (isCorrectOption) {
+                    optionClass = 'correct';
+                } else if (isSelected && !isCorrectOption) {
+                    optionClass = 'incorrect';
+                }
             } else if (isSelected) {
                 optionClass = 'selected';
             }
 
+            const clickHandler = isAnswered ? '' : `onclick="selectOption('${option.replace(/'/g, "\\'")}')"`;
+
             html += `
-                <div class="option ${optionClass}"
-                     onclick="selectOption('${option.replace(/'/g, "\\'")}')">
+                <div class="option ${optionClass}" ${clickHandler}>
                     <span class="option-letter">${letter}</span>
                     <span>${option}</span>
                 </div>
@@ -358,7 +371,10 @@ function displayDragAndDrop(question) {
     html += `<div class="drag-drop-container">`;
     html += `<p>Available words:</p>`;
 
-    // Collect all unique options from all blanks to display as draggable items
+    const userAnswerArray = userAnswers[currentQuestionIndex];
+    const isAnswered = checkIfAnswered(); // Use the general checkIfAnswered for the whole question
+
+    // Collect all unique options from all blanks
     const allOptions = [];
     question.blanks.forEach(blank => {
         if (blank.options && Array.isArray(blank.options)) {
@@ -379,23 +395,46 @@ function displayDragAndDrop(question) {
         });
     }
 
-    // Shuffle the drag items to ensure a random order each time
-    const shuffledOptions = shuffleArray(allOptions);
+    // Shuffle the drag items only if not answered, otherwise keep original order for consistency in feedback
+    const shuffledOptions = isAnswered ? allOptions : shuffleArray(allOptions);
+
     shuffledOptions.forEach(option => {
-        html += `<span class="drag-item" draggable="true" ondragstart="drag(event)" data-word="${option}">${option}</span>`;
+        // Check if this option has already been used in an answered blank for current question
+        const isUsed = isAnswered && userAnswerArray.includes(option);
+        html += `<span class="drag-item ${isUsed ? 'used-item' : ''}" draggable="${isAnswered ? 'false' : 'true'}" ondragstart="drag(event)" data-word="${option}">${option}</span>`;
     });
 
     html += `<br><br>`;
 
     // Create the sentence with drop zones
     question.blanks.forEach((blank, index) => {
-        html += blank.sentencePart; // Display the fixed part of the sentence
-        // Create a drop zone for each blank that needs filling
-        if (blank.sentencePart.includes('_____') || index < question.correctOrder.length) {
-            html += `<span class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)" data-blank="${index}">
-                ${userAnswers[currentQuestionIndex] && userAnswers[currentQuestionIndex][index] ?
-                  userAnswers[currentQuestionIndex][index] : 'Drop here'}
-            </span>`;
+        const currentDroppedWord = (userAnswerArray && userAnswerArray[index] !== null) ? userAnswerArray[index] : null;
+        const correctWord = question.correctOrder ? question.correctOrder[index] : null;
+        const dropZoneIsCorrect = isAnswered && currentDroppedWord === correctWord;
+        const dropZoneIsIncorrect = isAnswered && currentDroppedWord !== correctWord && currentDroppedWord !== null;
+
+        let dropZoneClass = 'drop-zone';
+        if (isAnswered) {
+            if (dropZoneIsCorrect) {
+                dropZoneClass += ' correct';
+            } else if (dropZoneIsIncorrect) {
+                dropZoneClass += ' incorrect';
+            }
+        }
+
+        // Disable drop events if the question is already answered or this specific blank is filled
+        const disableDropForBlank = isAnswered || (userAnswerArray && userAnswerArray[index] !== null);
+        const dropEvents = disableDropForBlank ? '' : `ondrop="drop(event)" ondragover="allowDrop(event)"`;
+
+        html += blank.sentencePart;
+        html += `<span class="${dropZoneClass}" ${dropEvents} data-blank="${index}">
+            ${currentDroppedWord || 'Drop here'}
+        </span>`;
+
+        if (isAnswered && dropZoneIsIncorrect) {
+            html += `<span style="color: #d32f2f; font-weight: bold; margin-left: 5px;">(Correct: ${correctWord})</span>`;
+        } else if (isAnswered && dropZoneIsCorrect) {
+             html += `<span style="color: #4caf50; font-weight: bold; margin-left: 5px;">(Correct!)</span>`;
         }
     });
 
@@ -414,8 +453,9 @@ function selectOption(option) {
     }
 
     userAnswers[currentQuestionIndex] = option; // Store the user's answer
-    displayQuestion(); // Re-display the question to show selected state
+    displayQuestion(); // Re-display the question to show selected state and feedback
     updateScore(); // Update the score
+    updateNextButtonState(); // Update next button state
 }
 
 /**
@@ -429,7 +469,9 @@ function setAnswer(value) {
     }
 
     userAnswers[currentQuestionIndex] = value.trim(); // Store the trimmed answer
+    displayQuestion(); // Re-display to show feedback and disable input
     updateScore(); // Update the score
+    updateNextButtonState(); // Update next button state
 }
 
 /**
@@ -463,15 +505,12 @@ function isCorrect(questionIndex) {
     switch (question.type) {
         case 'multiple_choice':
         case 'dropdown':
-            // For multiple choice and dropdown, direct comparison
             return userAnswer === question.correctAnswer;
 
         case 'fill_in_the_blank':
-            // For fill-in-the-blank, case-insensitive and trim comparison
             return userAnswer.toLowerCase().trim() === question.correctAnswer.toLowerCase().trim();
 
         case 'reading_passage':
-            // For reading passage, check the sub-question's answer
             if (question.questions && question.questions.length > 0) {
                 return userAnswer === question.questions[0].correctAnswer;
             }
@@ -480,8 +519,14 @@ function isCorrect(questionIndex) {
         case 'drag_and_drop':
             // For drag and drop, compare the array of user answers with the correct order
             if (Array.isArray(userAnswer) && Array.isArray(question.correctOrder)) {
-                // Use JSON.stringify for deep comparison of arrays
-                return JSON.stringify(userAnswer) === JSON.stringify(question.correctOrder);
+                // Check if all elements match in order
+                if (userAnswer.length !== question.correctOrder.length) return false;
+                for (let i = 0; i < userAnswer.length; i++) {
+                    if (userAnswer[i] !== question.correctOrder[i]) {
+                        return false;
+                    }
+                }
+                return true;
             }
             return false;
 
@@ -491,9 +536,55 @@ function isCorrect(questionIndex) {
 }
 
 /**
+ * Checks if the current question has been answered.
+ * @returns {boolean} True if answered, false otherwise.
+ */
+function checkIfAnswered() {
+    const question = questions[currentQuestionIndex];
+    const userAnswer = userAnswers[currentQuestionIndex];
+
+    if (userAnswer === null || userAnswer === undefined) {
+        return false;
+    }
+
+    switch (question.type) {
+        case 'multiple_choice':
+        case 'dropdown':
+        case 'reading_passage':
+            return userAnswer !== null;
+        case 'fill_in_the_blank':
+            return userAnswer.trim().length > 0; // Ensure it's not just empty or whitespace
+        case 'drag_and_drop':
+            // For drag and drop, ensure all blanks meant to be filled are indeed filled
+            if (Array.isArray(userAnswer) && question.correctOrder) {
+                return userAnswer.length === question.correctOrder.length && userAnswer.every(ans => ans !== null && ans !== undefined);
+            }
+            return false;
+        default:
+            return false;
+    }
+}
+
+/**
+ * Updates the state of the 'Next' button based on whether the current question is answered.
+ */
+function updateNextButtonState() {
+    const nextBtn = document.getElementById('nextBtn');
+    // Disable 'Next' if not answered AND not the last question.
+    // The 'Finish Quiz' button (on the last question) should always be enabled.
+    nextBtn.disabled = !checkIfAnswered() && currentQuestionIndex < questions.length - 1;
+}
+
+/**
  * Navigates to the next question or finishes the quiz if it's the last question.
  */
 function nextQuestion() {
+    // If not answered and it's not the last question, prevent navigation
+    if (!checkIfAnswered() && currentQuestionIndex < questions.length - 1) {
+        alert("Please answer the current question before proceeding.");
+        return;
+    }
+
     if (currentQuestionIndex < questions.length - 1) {
         currentQuestionIndex++; // Move to the next question
         displayQuestion(); // Display the new question
@@ -563,6 +654,7 @@ function restartQuiz() {
     // Re-display the first question and update score
     displayQuestion();
     updateScore();
+    updateNextButtonState(); // Update next button state for restarted quiz
 }
 
 // --- Drag and Drop functionality ---
@@ -581,6 +673,11 @@ function allowDrop(ev) {
  * @param {Event} ev - The drag event.
  */
 function drag(ev) {
+    // Only allow dragging if the question is not yet answered
+    if (checkIfAnswered()) {
+        ev.preventDefault();
+        return;
+    }
     // Set the word being dragged as plain text data
     ev.dataTransfer.setData("text", ev.target.getAttribute('data-word'));
 }
@@ -593,19 +690,27 @@ function drop(ev) {
     ev.preventDefault(); // Prevent default drop behavior
     ev.target.classList.remove('drag-over'); // Remove visual feedback
 
-    const data = ev.dataTransfer.getData("text"); // Get the dragged word
-    const blankIndex = parseInt(ev.target.getAttribute('data-blank')); // Get the index of the blank
+    const blankIndex = parseInt(ev.target.getAttribute('data-blank'));
+    const question = questions[currentQuestionIndex];
 
     // Initialize the user answer array for the current question if it's null
     if (!userAnswers[currentQuestionIndex]) {
-        userAnswers[currentQuestionIndex] = [];
+        userAnswers[currentQuestionIndex] = new Array(question.correctOrder.length).fill(null);
     }
 
-    // Place the dragged word into the correct blank index
+    // Prevent dropping if this specific blank is already filled
+    if (userAnswers[currentQuestionIndex][blankIndex] !== null) {
+        return;
+    }
+
+    const data = ev.dataTransfer.getData("text"); // Get the dragged word
+
     userAnswers[currentQuestionIndex][blankIndex] = data;
-    ev.target.textContent = data; // Update the drop zone text
+    displayQuestion(); // Re-render to update the display (and potentially disable drag/drop)
     updateScore(); // Update the score
+    updateNextButtonState(); // Update next button state after a drop
 }
+
 
 // --- Initial setup ---
 // Load questions when the script is first executed (after the DOM is ready)
