@@ -1,7 +1,7 @@
 // script.js
 
 // Define the GitHub URL for your quiz questions JSON
-const githubJsonUrl = 'https://Arr-glitch.github.io/english-quiz-data/B1.json';
+const githubJsonUrl = 'https://Arr-glitch.github.io/english-quiz-data/B1t.json';
 
 // Global variables to manage quiz state
 let questions = [];
