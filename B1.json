@@ -21,10 +21,10 @@
     "topic": "Vocabulary - Phrasal Verbs",
     "questionText": "Drag the words to complete the sentences.",
     "blanks": [
-      {"id": "blank1", "sentencePart": "Can you ", "options": ["up", "on", "off"], "correctAnswer": "look"},
+      {"id": "blank1", "sentencePart": "Can you ", "options": ["lookup", "lookon", "lookoff"], "correctAnswer": "lookup"},
       {"id": "blank2", "sentencePart": " the word in the dictionary?"}
     ],
-    "correctOrder": ["look", "up"]
+    "correctOrder": ["lookup"]
   },
   {
     "type": "dropdown",
