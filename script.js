@@ -4,7 +4,7 @@
 const githubJsonUrl = 'https://Arr-glitch.github.io/english-quiz-data/B1.json';
 
 // Global variables to manage quiz state
-let questions = [];
+let questions = []; 
 let originalQuestions = []; // Store original questions for restart
 let currentQuestionIndex = 0;
 let userAnswers = [];
