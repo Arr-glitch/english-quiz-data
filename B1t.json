@@ -1,324 +1,1318 @@
 [
   {
     "type": "multiple_choice",
-    "level": "B1",
-    "topic": "Grammar - Tenses",
-    "questionText": "I _____ for two hours when you called.",
-    "options": ["had been studying", "was studying", "studied", "have studied"],
-    "correctAnswer": "had been studying"
+    "level": "A2",
+    "topic": "Grammar - Present Simple",
+    "questionText": "My brother _____ football on Saturdays.",
+    "options": ["play", "plays", "is playing", "are playing"],
+    "correctAnswer": "plays",
+    "explanation": "For third person singular (he, she, it - 'my brother' is 'he') in Present Simple, we add -s to the verb."
+  },
+  {
+    "type": "multiple_choice",
+    "level": "A2",
+    "topic": "Grammar - be-verbs",
+    "questionText": "_____ you tired?",
+    "options": ["Is", "Are", "Am", "Be"],
+    "correctAnswer": "Are",
+    "explanation": "Use 'Are' with 'you' for questions with the verb 'to be'."
+  },
+  {
+    "type": "multiple_choice",
+    "level": "A2",
+    "topic": "Vocabulary - Food",
+    "questionText": "Which of these is a fruit?",
+    "options": ["Carrot", "Broccoli", "Banana", "Potato"],
+    "correctAnswer": "Banana"
+  },
+  {
+    "type": "multiple_choice",
+    "level": "A2",
+    "topic": "Grammar - Past Simple",
+    "questionText": "They _____ to the cinema last night.",
+    "options": ["go", "goes", "went", "are going"],
+    "correctAnswer": "went",
+    "explanation": "'Went' is the past simple form of 'go'."
+  },
+  {
+    "type": "multiple_choice",
+    "level": "A2",
+    "topic": "Grammar - Prepositions of Place",
+    "questionText": "The keys are _____ the table.",
+    "options": ["in", "on", "at", "under"],
+    "correctAnswer": "on",
+    "explanation": "'On' is used when something is on a surface."
+  },
+  {
+    "type": "multiple_choice",
+    "level": "A2",
+    "topic": "Grammar - Articles",
+    "questionText": "She is _____ teacher.",
+    "options": ["a", "an", "the", "(no article)"],
+    "correctAnswer": "a",
+    "explanation": "Use 'a' before a singular noun starting with a consonant sound."
+  },
+  {
+    "type": "multiple_choice",
+    "level": "A2",
+    "topic": "Vocabulary - Animals",
+    "questionText": "A cow says _____.",
+    "options": ["Moo", "Oink", "Baa", "Woof"],
+    "correctAnswer": "Moo"
+  },
+  {
+    "type": "multiple_choice",
+    "level": "A2",
+    "topic": "Grammar - can/can't",
+    "questionText": "Birds _____ fly, but fish _____.",
+    "options": ["can/can't", "can't/can", "can/can", "can't/can't"],
+    "correctAnswer": "can/can't",
+    "explanation": "'Can' expresses ability, 'can't' expresses inability."
+  },
+  {
+    "type": "multiple_choice",
+    "level": "A2",
+    "topic": "Grammar - Adverbs of Frequency",
+    "questionText": "I _____ drink coffee, maybe once a year.",
+    "options": ["always", "usually", "sometimes", "rarely"],
+    "correctAnswer": "rarely",
+    "explanation": "'Rarely' means not very often."
+  },
+  {
+    "type": "multiple_choice",
+    "level": "A2",
+    "topic": "Vocabulary - Daily Routines",
+    "questionText": "What time do you usually _____ up in the morning?",
+    "options": ["get", "go", "do", "make"],
+    "correctAnswer": "get",
+    "explanation": "The phrasal verb is 'get up'."
+  },
+  {
+    "type": "multiple_choice",
+    "level": "A2",
+    "topic": "Grammar - Possessives",
+    "questionText": "This is _____ car. It belongs to her.",
+    "options": ["his", "her", "its", "their"],
+    "correctAnswer": "her"
+  },
+  {
+    "type": "multiple_choice",
+    "level": "A2",
+    "topic": "Vocabulary - Jobs",
+    "questionText": "A person who flies an airplane is a _____.",
+    "options": ["doctor", "pilot", "chef", "teacher"],
+    "correctAnswer": "pilot"
+  },
+  {
+    "type": "multiple_choice",
+    "level": "A2",
+    "topic": "Grammar - Present Continuous",
+    "questionText": "Look! The children _____ in the park.",
+    "options": ["play", "plays", "are playing", "played"],
+    "correctAnswer": "are playing",
+    "explanation": "Use Present Continuous for actions happening now."
+  },
+  {
+    "type": "multiple_choice",
+    "level": "A2",
+    "topic": "Vocabulary - Family",
+    "questionText": "Your mother's sister is your _____.",
+    "options": ["aunt", "uncle", "cousin", "grandmother"],
+    "correctAnswer": "aunt"
+  },
+  {
+    "type": "multiple_choice",
+    "level": "A2",
+    "topic": "Grammar - Conjunctions",
+    "questionText": "I like tea _____ I don't like coffee.",
+    "options": ["and", "or", "but", "so"],
+    "correctAnswer": "but",
+    "explanation": "'But' is used to show a contrast."
+  },
+  {
+    "type": "multiple_choice",
+    "level": "A2",
+    "topic": "Grammar - some/any",
+    "questionText": "Is there _____ milk in the fridge?",
+    "options": ["some", "any", "a", "many"],
+    "correctAnswer": "any",
+    "explanation": "Use 'any' in questions and negative sentences for uncountable nouns or plural countable nouns."
+  },
+  {
+    "type": "multiple_choice",
+    "level": "A2",
+    "topic": "Vocabulary - Colors",
+    "questionText": "What color is a typical London bus?",
+    "options": ["Yellow", "Blue", "Red", "Green"],
+    "correctAnswer": "Red"
+  },
+  {
+    "type": "multiple_choice",
+    "level": "A2",
+    "topic": "Grammar - Adjectives",
+    "questionText": "This is a _____ book. I like it a lot.",
+    "options": ["boring", "difficult", "interesting", "bad"],
+    "correctAnswer": "interesting"
+  },
+  {
+    "type": "multiple_choice",
+    "level": "A2",
+    "topic": "Grammar - Prepositions of Time",
+    "questionText": "My birthday is _____ June.",
+    "options": ["on", "in", "at", "by"],
+    "correctAnswer": "in",
+    "explanation": "Use 'in' for months and years."
+  },
+  {
+    "type": "multiple_choice",
+    "level": "A2",
+    "topic": "Vocabulary - Places in a city",
+    "questionText": "You go to a _____ to watch a film.",
+    "options": ["library", "supermarket", "cinema", "post office"],
+    "correctAnswer": "cinema"
+  },
+  {
+    "type": "multiple_choice",
+    "level": "A2",
+    "topic": "Grammar - Plural Nouns",
+    "questionText": "One child, two _____.",
+    "options": ["childs", "childrens", "children", "childes"],
+    "correctAnswer": "children",
+    "explanation": "'Children' is the irregular plural form of 'child'."
+  },
+  {
+    "type": "multiple_choice",
+    "level": "A2",
+    "topic": "Vocabulary - Clothes",
+    "questionText": "You wear a _____ on your head.",
+    "options": ["scarf", "hat", "gloves", "socks"],
+    "correctAnswer": "hat"
+  },
+  {
+    "type": "multiple_choice",
+    "level": "A2",
+    "topic": "Grammar - Questions (Who, What, Where)",
+    "questionText": "_____ is your name?",
+    "options": ["Who", "Where", "What", "When"],
+    "correctAnswer": "What"
+  },
+  {
+    "type": "multiple_choice",
+    "level": "A2",
+    "topic": "Vocabulary - Hobbies",
+    "questionText": "Playing the guitar is a _____.",
+    "options": ["sport", "job", "hobby", "food"],
+    "correctAnswer": "hobby"
+  },
+  {
+    "type": "multiple_choice",
+    "level": "A2",
+    "topic": "Grammar - There is/There are",
+    "questionText": "_____ a big tree in the garden.",
+    "options": ["There is", "There are", "Is there", "Are there"],
+    "correctAnswer": "There is",
+    "explanation": "Use 'There is' for singular nouns."
   },
   {
     "type": "fill_in_the_blank",
-    "level": "B1",
-    "topic": "Grammar - Conditionals",
-    "questionText": "If I had known you were coming, I _____ a cake.",
-    "sentenceParts": ["If I had known you were coming, I ", " a cake."],
-    "correctAnswer": "would have baked"
+    "level": "A2",
+    "topic": "Grammar - Present Simple",
+    "questionText": "They _____ (live) in London.",
+    "sentenceParts": ["They ", " (live) in London."],
+    "correctAnswer": "live",
+    "explanation": "For 'they' in Present Simple, use the base form of the verb."
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "A2",
+    "topic": "Grammar - Past Simple",
+    "questionText": "I _____ (watch) a good film yesterday.",
+    "sentenceParts": ["I ", " (watch) a good film yesterday."],
+    "correctAnswer": "watched"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "A2",
+    "topic": "Grammar - be-verbs",
+    "questionText": "She _____ (be) very happy today.",
+    "sentenceParts": ["She ", " (be) very happy today."],
+    "correctAnswer": "is"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "A2",
+    "topic": "Grammar - Articles",
+    "questionText": "He has _____ orange.",
+    "sentenceParts": ["He has ", " orange."],
+    "correctAnswer": "an",
+    "explanation": "Use 'an' before a singular noun starting with a vowel sound."
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "A2",
+    "topic": "Vocabulary - Numbers",
+    "questionText": "There are _____ (7) days in a week.",
+    "sentenceParts": ["There are ", " (7) days in a week."],
+    "correctAnswer": "seven"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "A2",
+    "topic": "Grammar - Prepositions of Time",
+    "questionText": "The party is _____ Saturday.",
+    "sentenceParts": ["The party is ", " Saturday."],
+    "correctAnswer": "on",
+    "explanation": "Use 'on' for days of the week."
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "A2",
+    "topic": "Grammar - can/can't",
+    "questionText": "A fish _____ (not fly).",
+    "sentenceParts": ["A fish ", " (not fly)."],
+    "correctAnswer": "can't fly",
+    "explanation": "Provide the full verb phrase."
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "A2",
+    "topic": "Vocabulary - Family",
+    "questionText": "My father's son is my _____.",
+    "sentenceParts": ["My father's son is my ", "."],
+    "correctAnswer": "brother"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "A2",
+    "topic": "Grammar - Possessive Adjectives",
+    "questionText": "This is John's book. It's _____ book.",
+    "sentenceParts": ["This is John's book. It's ", " book."],
+    "correctAnswer": "his"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "A2",
+    "topic": "Grammar - Present Continuous",
+    "questionText": "What _____ you _____ (do) now?",
+    "sentenceParts": ["What ", " you ", " (do) now?"],
+    "correctAnswer": "are doing",
+    "explanation": "This question requires two words to be filled. The question implies the first part of the auxiliary and the main verb. A better format for two separate blanks might be needed, but for now, we assume the user understands this."
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "A2",
+    "topic": "Vocabulary - Time",
+    "questionText": "There are sixty _____ in an hour.",
+    "sentenceParts": ["There are sixty ", " in an hour."],
+    "correctAnswer": "minutes"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "A2",
+    "topic": "Grammar - Adverbs of Frequency",
+    "questionText": "She _____ (always / go) to bed early.",
+    "sentenceParts": ["She ", " (always / go) to bed early."],
+    "correctAnswer": "always goes",
+    "explanation": "Adverbs of frequency usually go before the main verb."
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "A2",
+    "topic": "Vocabulary - Greetings",
+    "questionText": "When you meet someone in the morning, you say 'Good _____'.",
+    "sentenceParts": ["When you meet someone in the morning, you say 'Good ", "'."],
+    "correctAnswer": "morning"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "A2",
+    "topic": "Grammar - Countable/Uncountable Nouns",
+    "questionText": "I need _____ (water).",
+    "sentenceParts": ["I need ", " (water)."],
+    "correctAnswer": "some water",
+    "explanation": "'Water' is uncountable. Often used with 'some' in positive statements."
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "A2",
+    "topic": "Grammar - Questions (Where)",
+    "questionText": "_____ do you live?",
+    "sentenceParts": ["", " do you live?"],
+    "correctAnswer": "Where"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "A2",
+    "topic": "Vocabulary - Jobs",
+    "questionText": "Someone who cooks food in a restaurant is a _____.",
+    "sentenceParts": ["Someone who cooks food in a restaurant is a ", "."],
+    "correctAnswer": "chef"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "A2",
+    "topic": "Grammar - Plural Nouns",
+    "questionText": "I have three _____ (cat).",
+    "sentenceParts": ["I have three ", " (cat)."],
+    "correctAnswer": "cats"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "A2",
+    "topic": "Vocabulary - Days of the week",
+    "questionText": "The day after Monday is _____.",
+    "sentenceParts": ["The day after Monday is ", "."],
+    "correctAnswer": "Tuesday"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "A2",
+    "topic": "Grammar - Prepositions of Place",
+    "questionText": "The bank is _____ the supermarket.",
+    "sentenceParts": ["The bank is ", " the supermarket."],
+    "correctAnswer": "next to",
+    "explanation": "Other prepositions like 'near' could also fit, but 'next to' is common."
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "A2",
+    "topic": "Vocabulary - Clothes",
+    "questionText": "In winter, I wear a warm _____.",
+    "sentenceParts": ["In winter, I wear a warm ", "."],
+    "correctAnswer": "coat",
+    "explanation": "Other answers like 'jumper' or 'sweater' are also possible."
+  },
+  {
+    "type": "true_false",
+    "level": "A2",
+    "topic": "Vocabulary - Animals",
+    "questionText": "A dog can fly.",
+    "correctAnswer": false,
+    "explanation": "Dogs cannot fly; birds can fly."
+  },
+  {
+    "type": "true_false",
+    "level": "A2",
+    "topic": "Grammar - Articles",
+    "questionText": "We use 'an' before the word 'university'.",
+    "correctAnswer": false,
+    "explanation": "We say 'a university' because 'university' starts with a 'y' sound (consonant sound)."
+  },
+  {
+    "type": "true_false",
+    "level": "A2",
+    "topic": "Vocabulary - Food",
+    "questionText": "Tomatoes are vegetables.",
+    "correctAnswer": false,
+    "explanation": "Botanically, tomatoes are fruits. However, they are often used as vegetables in cooking."
+  },
+  {
+    "type": "true_false",
+    "level": "A2",
+    "topic": "Grammar - Present Simple",
+    "questionText": "'She like apples.' is a correct sentence.",
+    "correctAnswer": false,
+    "explanation": "The correct sentence is 'She likes apples.' (add -s for third person singular)."
+  },
+  {
+    "type": "true_false",
+    "level": "A2",
+    "topic": "Vocabulary - Colors",
+    "questionText": "The sun is blue.",
+    "correctAnswer": false,
+    "explanation": "The sun appears yellow or orange to us."
+  },
+  {
+    "type": "true_false",
+    "level": "A2",
+    "topic": "Grammar - Plurals",
+    "questionText": "The plural of 'mouse' is 'mouses'.",
+    "correctAnswer": false,
+    "explanation": "The plural of 'mouse' is 'mice'."
+  },
+  {
+    "type": "true_false",
+    "level": "A2",
+    "topic": "Vocabulary - Days of the Week",
+    "questionText": "Saturday and Sunday are weekdays.",
+    "correctAnswer": false,
+    "explanation": "Saturday and Sunday are part of the weekend."
+  },
+  {
+    "type": "true_false",
+    "level": "A2",
+    "topic": "Grammar - be-verbs",
+    "questionText": "'I is happy.' is grammatically correct.",
+    "correctAnswer": false,
+    "explanation": "The correct form is 'I am happy.'"
+  },
+  {
+    "type": "true_false",
+    "level": "A2",
+    "topic": "Vocabulary - Numbers",
+    "questionText": "Twenty comes after nineteen.",
+    "correctAnswer": true
+  },
+  {
+    "type": "true_false",
+    "level": "A2",
+    "topic": "Grammar - Prepositions of Place",
+    "questionText": "If something is 'under' a table, it is on top of it.",
+    "correctAnswer": false,
+    "explanation": "'Under' means below or beneath."
+  },
+  {
+    "type": "true_false",
+    "level": "A2",
+    "topic": "Vocabulary - Jobs",
+    "questionText": "A baker makes bread.",
+    "correctAnswer": true
+  },
+  {
+    "type": "true_false",
+    "level": "A2",
+    "topic": "Grammar - Past Simple",
+    "questionText": "The past tense of 'eat' is 'eated'.",
+    "correctAnswer": false,
+    "explanation": "The past tense of 'eat' is 'ate'."
+  },
+  {
+    "type": "true_false",
+    "level": "A2",
+    "topic": "Vocabulary - Family",
+    "questionText": "Your father's mother is your aunt.",
+    "correctAnswer": false,
+    "explanation": "Your father's mother is your grandmother."
+  },
+  {
+    "type": "true_false",
+    "level": "A2",
+    "topic": "Grammar - Present Continuous",
+    "questionText": "We use Present Continuous to talk about habits.",
+    "correctAnswer": false,
+    "explanation": "We use Present Simple to talk about habits. Present Continuous is for actions happening now."
+  },
+  {
+    "type": "true_false",
+    "level": "A2",
+    "topic": "Vocabulary - Seasons",
+    "questionText": "Summer comes after spring.",
+    "correctAnswer": true
   },
   {
     "type": "drag_and_drop",
+    "level": "A2",
+    "topic": "Vocabulary - Prepositions",
+    "questionText": "Drag the correct preposition to complete the sentence.",
+    "blanks": [
+      {"id": "blank1", "sentencePart": "The cat is sleeping ", "options": ["on", "in", "under"], "correctAnswer": "on"},
+      {"id": "blank2", "sentencePart": " the mat."}
+    ],
+    "correctOrder": ["on"],
+    "explanation": "'on' is used for surfaces."
+  },
+  {
+    "type": "drag_and_drop",
+    "level": "A2",
+    "topic": "Grammar - Articles",
+    "questionText": "Drag the correct article to complete the sentence.",
+    "blanks": [
+      {"id": "blank1", "sentencePart": "I saw ", "options": ["a", "an", "the"], "correctAnswer": "an"},
+      {"id": "blank2", "sentencePart": " elephant at the zoo."}
+    ],
+    "correctOrder": ["an"],
+    "explanation": "Use 'an' before words starting with a vowel sound."
+  },
+  {
+    "type": "drag_and_drop",
+    "level": "A2",
+    "topic": "Vocabulary - Food",
+    "questionText": "Drag the word to complete the sentence.",
+    "blanks": [
+      {"id": "blank1", "sentencePart": "I like to eat ", "options": ["apples", "chairs", "books"], "correctAnswer": "apples"},
+      {"id": "blank2", "sentencePart": " for a snack."}
+    ],
+    "correctOrder": ["apples"]
+  },
+  {
+    "type": "drag_and_drop",
+    "level": "A2",
+    "topic": "Grammar - Verb 'to be'",
+    "questionText": "Drag the correct form of 'to be'.",
+    "blanks": [
+      {"id": "blank1", "sentencePart": "We ", "options": ["is", "are", "am"], "correctAnswer": "are"},
+      {"id": "blank2", "sentencePart": " students."}
+    ],
+    "correctOrder": ["are"]
+  },
+  {
+    "type": "drag_and_drop",
+    "level": "A2",
+    "topic": "Vocabulary - Actions",
+    "questionText": "Drag the verb to complete the sentence.",
+    "blanks": [
+      {"id": "blank1", "sentencePart": "Can you ", "options": ["read", "eat", "sleep"], "correctAnswer": "read"},
+      {"id": "blank2", "sentencePart": " this book?"}
+    ],
+    "correctOrder": ["read"]
+  },
+  {
+    "type": "drag_and_drop",
+    "level": "A2",
+    "topic": "Grammar - Demonstratives",
+    "questionText": "Drag the correct demonstrative pronoun.",
+    "blanks": [
+      {"id": "blank1", "sentencePart": "", "options": ["This", "These", "That"], "correctAnswer": "This"},
+      {"id": "blank2", "sentencePart": " is my pen (near me)."}
+    ],
+    "correctOrder": ["This"],
+    "explanation": "'This' is used for a singular item near the speaker."
+  },
+  {
+    "type": "drag_and_drop",
+    "level": "A2",
+    "topic": "Vocabulary - Places",
+    "questionText": "Drag the place to complete the sentence.",
+    "blanks": [
+      {"id": "blank1", "sentencePart": "I buy bread at the ", "options": ["bakery", "library", "park"], "correctAnswer": "bakery"},
+      {"id": "blank2", "sentencePart": "."}
+    ],
+    "correctOrder": ["bakery"]
+  },
+  {
+    "type": "drag_and_drop",
+    "level": "A2",
+    "topic": "Grammar - Conjunctions",
+    "questionText": "Drag the conjunction to complete the sentence.",
+    "blanks": [
+      {"id": "blank1", "sentencePart": "It is sunny, ", "options": ["but", "so", "or"], "correctAnswer": "so"},
+      {"id": "blank2", "sentencePart": " let's go to the beach."}
+    ],
+    "correctOrder": ["so"],
+    "explanation": "'so' is used to show a result or consequence."
+  },
+  {
+    "type": "dropdown",
+    "level": "A2",
+    "topic": "Grammar - Articles",
+    "questionText": "She has [dropdown] new car.",
+    "options": ["a", "an", "the", "-"],
+    "correctAnswer": "a",
+    "explanation": "Use 'a' before a consonant sound. '[dropdown]' indicates where the selection is made."
+  },
+  {
+    "type": "dropdown",
+    "level": "A2",
+    "topic": "Grammar - Prepositions of Time",
+    "questionText": "I wake up [dropdown] 7 o'clock.",
+    "options": ["in", "on", "at", "by"],
+    "correctAnswer": "at",
+    "explanation": "Use 'at' for specific times."
+  },
+  {
+    "type": "dropdown",
+    "level": "A2",
+    "topic": "Grammar - Verb 'to be'",
+    "questionText": "They [dropdown] from Spain.",
+    "options": ["is", "are", "am", "be"],
+    "correctAnswer": "are"
+  },
+  {
+    "type": "dropdown",
+    "level": "A2",
+    "topic": "Vocabulary - Quantifiers",
+    "questionText": "There aren't [dropdown] apples left.",
+    "options": ["much", "many", "some", "a lot"],
+    "correctAnswer": "many",
+    "explanation": "Use 'many' with countable nouns in negative sentences."
+  },
+  {
+    "type": "dropdown",
+    "level": "A2",
+    "topic": "Grammar - Possessive Pronouns",
+    "questionText": "The blue bike is [dropdown]. (It belongs to me)",
+    "options": ["my", "me", "mine", "I"],
+    "correctAnswer": "mine"
+  },
+  {
+    "type": "dropdown",
+    "level": "A2",
+    "topic": "Vocabulary - Adjectives",
+    "questionText": "This exercise is very [dropdown]. I can't do it.",
+    "options": ["easy", "simple", "difficult", "small"],
+    "correctAnswer": "difficult"
+  },
+  {
+    "type": "dropdown",
+    "level": "A2",
+    "topic": "Grammar - Past Simple (Irregular verbs)",
+    "questionText": "She [dropdown] a letter to her friend yesterday.",
+    "options": ["write", "writes", "wrote", "written"],
+    "correctAnswer": "wrote"
+  },
+  {
+    "type": "multiple_choice",
+    "level": "B1",
+    "topic": "Grammar - Present Perfect",
+    "questionText": "I _____ never _____ to Japan.",
+    "options": ["have / be", "has / been", "have / been", "was / -"],
+    "correctAnswer": "have / been",
+    "explanation": "Use Present Perfect (have/has + past participle) for experiences."
+  },
+  {
+    "type": "multiple_choice",
+    "level": "B1",
+    "topic": "Grammar - Past Continuous",
+    "questionText": "What _____ you _____ when I called you?",
+    "options": ["was / doing", "were / doing", "did / do", "are / doing"],
+    "correctAnswer": "were / doing",
+    "explanation": "Use Past Continuous for an action in progress at a specific time in the past."
+  },
+  {
+    "type": "multiple_choice",
+    "level": "B1",
+    "topic": "Vocabulary - Travel",
+    "questionText": "A document you need to enter a foreign country is a _____.",
+    "options": ["ticket", "passport", "map", "suitcase"],
+    "correctAnswer": "passport"
+  },
+  {
+    "type": "multiple_choice",
+    "level": "B1",
+    "topic": "Grammar - Modals (Obligation)",
+    "questionText": "You _____ wear a seatbelt in the car. It's the law.",
+    "options": ["must", "might", "should", "can"],
+    "correctAnswer": "must",
+    "explanation": "'Must' expresses strong obligation, often based on rules or laws."
+  },
+  {
+    "type": "multiple_choice",
+    "level": "B1",
+    "topic": "Grammar - Comparatives",
+    "questionText": "This book is _____ than the last one I read.",
+    "options": ["more interesting", "interesting", "most interesting", "interestinger"],
+    "correctAnswer": "more interesting",
+    "explanation": "For longer adjectives (usually 2 syllables or more, not ending in -y), use 'more + adjective'."
+  },
+  {
+    "type": "multiple_choice",
+    "level": "B1",
+    "topic": "Grammar - First Conditional",
+    "questionText": "If it _____ tomorrow, we _____ stay home.",
+    "options": ["rain / will", "rains / will", "will rain / will", "rains / would"],
+    "correctAnswer": "rains / will",
+    "explanation": "First Conditional structure: If + Present Simple, ... will + base verb."
+  },
+  {
+    "type": "multiple_choice",
     "level": "B1",
     "topic": "Vocabulary - Phrasal Verbs",
-    "questionText": "Drag the words to complete the sentences.",
-    "blanks": [
-      {"id": "blank1", "sentencePart": "Can you ", "options": ["lookup", "lookon", "lookoff"], "correctAnswer": "lookup"},
-      {"id": "blank2", "sentencePart": " the word in the dictionary?"}
-    ],
-    "correctOrder": ["lookup"]
-  },
-  {
-    "type": "dropdown",
-    "level": "B1",
-    "topic": "Grammar - Modals",
-    "questionText": "You _____ smoke in here. It's forbidden.",
-    "options": ["mustn't", "shouldn't", "can't", "wouldn't"],
-    "correctAnswer": "mustn't"
-  },
-  {
-    "type": "reading_passage",
-    "level": "B1",
-    "topic": "Reading Comprehension",
-    "passage": "The Amazon rainforest is the largest rainforest in the world, covering an area of approximately 5.5 million square kilometers. It is home to an incredible variety of plants and animals, many of which are unique to the region. The rainforest plays a crucial role in regulating the Earth's climate by absorbing carbon dioxide and producing oxygen. However, it is currently facing significant threats from deforestation, logging, and agricultural expansion, which are destroying vast areas of its natural habitat.",
-    "questions": [
-      {
-        "questionText": "What is the main idea of the passage?",
-        "options": [
-          "The Amazon is a beautiful place.",
-          "The Amazon rainforest is important but is being destroyed.",
-          "The Amazon has many unique animals.",
-          "Deforestation is a new problem."
-        ],
-        "correctAnswer": "The Amazon rainforest is important but is being destroyed."
-      },
-      {
-        "questionText": "What is NOT a threat to the Amazon rainforest mentioned in the passage?",
-        "options": ["deforestation", "logging", "climate change", "agricultural expansion"],
-        "correctAnswer": "climate change"
-      }
-    ]
+    "questionText": "Could you _____ the music a bit? It's too loud.",
+    "options": ["turn up", "turn on", "turn down", "turn off"],
+    "correctAnswer": "turn down",
+    "explanation": "'Turn down' means to reduce the volume."
   },
   {
     "type": "multiple_choice",
     "level": "B1",
-    "topic": "Vocabulary - Synonyms",
-    "questionText": "Choose the word closest in meaning to 'ancient'.",
-    "options": ["modern", "old", "new", "fast"],
-    "correctAnswer": "old"
-  },
-  {
-    "type": "fill_in_the_blank",
-    "level": "B1",
-    "topic": "Grammar - Passive Voice",
-    "questionText": "The report _____ by the manager yesterday.",
-    "sentenceParts": ["The report ", " by the manager yesterday."],
-    "correctAnswer": "was written"
-  },
-  {
-    "type": "drag_and_drop",
-    "level": "B1",
-    "topic": "Vocabulary - Adjectives",
-    "questionText": "Drag the adjectives to describe the person.",
-    "blanks": [
-      {"id": "blank1", "sentencePart": "She is very ", "options": ["friendly", "tall", "slow"], "correctAnswer": "friendly"},
-      {"id": "blank2", "sentencePart": " and always smiling."}
-    ],
-    "correctOrder": ["friendly"]
-  },
-  {
-    "type": "multiple_choice",
-    "level": "B1",
-    "topic": "Grammar - Reported Speech",
-    "questionText": "She said she _____ feeling well.",
-    "options": ["wasn't", "isn't", "won't be", "don't be"],
-    "correctAnswer": "wasn't"
-  },
-  {
-    "type": "fill_in_the_blank",
-    "level": "B1",
-    "topic": "Vocabulary - Collocations",
-    "questionText": "I need to _____ a decision soon.",
-    "sentenceParts": ["I need to ", " a decision soon."],
-    "correctAnswer": "make"
-  },
-  {
-    "type": "drag_and_drop",
-    "level": "B1",
-    "topic": "Grammar - Prepositions",
-    "questionText": "Drag the prepositions to complete the sentences.",
-    "blanks": [
-      {"id": "blank1", "sentencePart": "I'm interested ", "options": ["in", "on", "at"], "correctAnswer": "in"},
-      {"id": "blank2", "sentencePart": " learning Spanish."}
-    ],
-    "correctOrder": ["in"]
-  },
-  {
-    "type": "dropdown",
-    "level": "B1",
-    "topic": "Vocabulary - Adverbs of Frequency",
-    "questionText": "I _____ go to the gym, about three times a week.",
-    "options": ["often", "rarely", "never", "always"],
-    "correctAnswer": "often"
-  },
-  {
-    "type": "reading_passage",
-    "level": "B1",
-    "topic": "Reading Comprehension",
-    "passage": "Climate change is a global phenomenon that refers to long-term shifts in temperatures and weather patterns. These shifts may be natural, but since the 1800s, human activities have been the main driver of climate change, primarily due to the burning of fossil fuels (like coal, oil, and gas), which produces heat-trapping gases. The consequences of climate change include rising sea levels, more extreme weather events, and disruptions to ecosystems.",
-    "questions": [
-      {
-        "questionText": "What is the primary cause of climate change since the 1800s?",
-        "options": [
-          "natural shifts",
-          "volcanic eruptions",
-          "burning of fossil fuels",
-          "solar flares"
-        ],
-        "correctAnswer": "burning of fossil fuels"
-      },
-      {
-        "questionText": "Which of these is NOT a consequence of climate change mentioned?",
-        "options": ["rising sea levels", "more extreme weather", "increased biodiversity", "disruptions to ecosystems"],
-        "correctAnswer": "increased biodiversity"
-      }
-    ]
-  },
-  {
-    "type": "multiple_choice",
-    "level": "B1",
-    "topic": "Grammar - Future Tenses",
-    "questionText": "By this time next year, I _____ my degree.",
-    "options": ["will have finished", "will finish", "am finishing", "finish"],
-    "correctAnswer": "will have finished"
-  },
-  {
-    "type": "fill_in_the_blank",
-    "level": "B1",
-    "topic": "Vocabulary - Opposites",
-    "questionText": "The opposite of 'optimistic' is _____.",
-    "sentenceParts": ["The opposite of 'optimistic' is ", "."],
-    "correctAnswer": "pessimistic"
-  },
-  {
-    "type": "drag_and_drop",
-    "level": "B1",
-    "topic": "Grammar - Articles",
-    "questionText": "Drag the articles to complete the sentences.",
-    "blanks": [
-      {"id": "blank1", "sentencePart": "She bought ", "options": ["a", "an", "the"], "correctAnswer": "an"},
-      {"id": "blank2", "sentencePart": " interesting book."}
-    ],
-    "correctOrder": ["an"]
-  },
-  {
-    "type": "dropdown",
-    "level": "B1",
-    "topic": "Vocabulary - Linking Words",
-    "questionText": "He is very intelligent; _____, he is not very good at practical tasks.",
-    "options": ["however", "therefore", "in addition", "similarly"],
-    "correctAnswer": "however"
+    "topic": "Grammar - Passive Voice (Present Simple)",
+    "questionText": "English _____ in many countries around the world.",
+    "options": ["speaks", "is spoken", "is speaking", "spoke"],
+    "correctAnswer": "is spoken",
+    "explanation": "Use Present Simple Passive (am/is/are + past participle) when the action is more important than who does it."
   },
   {
     "type": "multiple_choice",
     "level": "B1",
     "topic": "Grammar - Gerunds and Infinitives",
-    "questionText": "I enjoy _____ in the park.",
-    "options": ["walking", "to walk", "walk", "walks"],
-    "correctAnswer": "walking"
-  },
-  {
-    "type": "fill_in_the_blank",
-    "level": "B1",
-    "topic": "Vocabulary - Idioms",
-    "questionText": "It's raining _____ and dogs, so I can't go out.",
-    "sentenceParts": ["It's raining ", " and dogs, so I can't go out."],
-    "correctAnswer": "cats"
-  },
-  {
-    "type": "drag_and_drop",
-    "level": "B1",
-    "topic": "Grammar - Quantifiers",
-    "questionText": "Drag the quantifiers to complete the sentences.",
-    "blanks": [
-      {"id": "blank1", "sentencePart": "There are ", "options": ["a few", "a lot of", "much"], "correctAnswer": "a lot of"},
-      {"id": "blank2", "sentencePart": " people here today."}
-    ],
-    "correctOrder": ["a lot of"]
-  },
-  {
-    "type": "dropdown",
-    "level": "B1",
-    "topic": "Grammar - Phrasal Verbs",
-    "questionText": "She decided to _____ her old clothes.",
-    "options": ["give up", "give away", "give in", "give out"],
-    "correctAnswer": "give away"
+    "questionText": "I enjoy _____ books in my free time.",
+    "options": ["to read", "reading", "read", "reads"],
+    "correctAnswer": "reading",
+    "explanation": "The verb 'enjoy' is followed by a gerund (-ing form)."
   },
   {
     "type": "multiple_choice",
     "level": "B1",
-    "topic": "Vocabulary - Feelings and Emotions",
-    "questionText": "I felt very _____ after hearing the bad news.",
-    "options": ["depressed", "excited", "thrilled", "amused"],
-    "correctAnswer": "depressed"
+    "topic": "Vocabulary - Feelings",
+    "questionText": "She was very _____ when she heard the good news.",
+    "options": ["boring", "excited", "exciting", "bored"],
+    "correctAnswer": "excited",
+    "explanation": "'Excited' describes how a person feels."
   },
   {
-    "type": "fill_in_the_blank",
+    "type": "multiple_choice",
     "level": "B1",
-    "topic": "Grammar - Comparatives and Superlatives",
-    "questionText": "This is _____ book I've ever read.",
-    "sentenceParts": ["This is ", " book I've ever read."],
-    "correctAnswer": "the most interesting"
+    "topic": "Grammar - Past Perfect",
+    "questionText": "When he arrived at the station, the train _____ already _____.",
+    "options": ["had / left", "has / left", "left / -", "was / leaving"],
+    "correctAnswer": "had / left",
+    "explanation": "Use Past Perfect (had + past participle) for an action completed before another past action."
   },
   {
-    "type": "reading_passage",
+    "type": "multiple_choice",
     "level": "B1",
-    "topic": "Reading Comprehension",
-    "passage": "The internet has revolutionized the way we live, work, and communicate. It provides instant access to information, allows for global communication, and offers countless opportunities for entertainment and learning. However, it also presents challenges, such as the spread of misinformation, privacy concerns, and the risk of addiction. As technology continues to evolve, so too will the ways in which we interact with the digital world.",
-    "questions": [
-      {
-        "questionText": "What is one of the benefits of the internet mentioned?",
-        "options": [
-          "spread of misinformation",
-          "privacy concerns",
-          "instant access to information",
-          "risk of addiction"
-        ],
-        "correctAnswer": "instant access to information"
-      },
-      {
-        "questionText": "What is a challenge associated with the internet?",
-        "options": ["global communication", "entertainment", "learning opportunities", "privacy concerns"],
-        "correctAnswer": "privacy concerns"
-      }
-    ]
+    "topic": "Grammar - 'used to'",
+    "questionText": "My grandfather _____ tell us stories when we were children.",
+    "options": ["used to", "is used to", "uses to", "was used"],
+    "correctAnswer": "used to",
+    "explanation": "'Used to + base verb' refers to past habits or states that are no longer true."
   },
   {
-    "type": "drag_and_drop",
+    "type": "multiple_choice",
     "level": "B1",
-    "topic": "Vocabulary - Adverbs of Manner",
-    "questionText": "Drag the adverbs to describe how the actions were performed.",
-    "blanks": [
-      {"id": "blank1", "sentencePart": "He drives ", "options": ["carefully", "fast", "loudly"], "correctAnswer": "carefully"},
-      {"id": "blank2", "sentencePart": " through the city."}
-    ],
-    "correctOrder": ["carefully"]
+    "topic": "Vocabulary - Work",
+    "questionText": "If you want the job, you need to send a CV and a _____ letter.",
+    "options": ["covering", "covered", "cover", "covers"],
+    "correctAnswer": "cover",
+    "explanation": "The term is 'cover letter'."
   },
   {
-    "type": "dropdown",
+    "type": "multiple_choice",
     "level": "B1",
-    "topic": "Grammar - Cause and Effect",
-    "questionText": "She couldn't go to the party _____ she was ill.",
-    "options": ["because", "although", "despite", "however"],
-    "correctAnswer": "because"
+    "topic": "Grammar - Second Conditional",
+    "questionText": "If I _____ a lot of money, I _____ travel the world.",
+    "options": ["have / would", "had / would", "had / will", "have / will"],
+    "correctAnswer": "had / would",
+    "explanation": "Second Conditional structure: If + Past Simple, ... would + base verb (for hypothetical situations)."
+  },
+  {
+    "type": "multiple_choice",
+    "level": "B1",
+    "topic": "Grammar - Relative Clauses",
+    "questionText": "The woman _____ lives next door is a doctor.",
+    "options": ["who", "which", "whose", "what"],
+    "correctAnswer": "who",
+    "explanation": "Use 'who' as a relative pronoun for people."
+  },
+  {
+    "type": "multiple_choice",
+    "level": "B1",
+    "topic": "Vocabulary - Environment",
+    "questionText": "_____ is a serious problem that affects our planet's climate.",
+    "options": ["Recycling", "Pollution", "Planting", "Conservation"],
+    "correctAnswer": "Pollution"
+  },
+  {
+    "type": "multiple_choice",
+    "level": "B1",
+    "topic": "Grammar - Modals (Advice)",
+    "questionText": "You look tired. You _____ take a break.",
+    "options": ["must", "should", "mightn't", "have to"],
+    "correctAnswer": "should",
+    "explanation": "'Should' is used to give advice."
+  },
+  {
+    "type": "multiple_choice",
+    "level": "B1",
+    "topic": "Grammar - Future (going to)",
+    "questionText": "Look at those dark clouds! It _____ rain soon.",
+    "options": ["will", "is going to", "would", "is raining"],
+    "correctAnswer": "is going to",
+    "explanation": "Use 'be going to' for predictions based on present evidence."
+  },
+  {
+    "type": "multiple_choice",
+    "level": "B1",
+    "topic": "Vocabulary - Technology",
+    "questionText": "I use my _____ to make calls and send messages.",
+    "options": ["keyboard", "printer", "smartphone", "monitor"],
+    "correctAnswer": "smartphone"
+  },
+  {
+    "type": "multiple_choice",
+    "level": "B1",
+    "topic": "Grammar - Superlatives",
+    "questionText": "Mount Everest is _____ mountain in the world.",
+    "options": ["the high", "higher than", "the highest", "highest"],
+    "correctAnswer": "the highest",
+    "explanation": "Use 'the + adjective-est' or 'the most + adjective' for superlatives."
+  },
+  {
+    "type": "multiple_choice",
+    "level": "B1",
+    "topic": "Grammar - Reported Speech (Statements)",
+    "questionText": "She said, 'I am happy.' She said that she _____ happy.",
+    "options": ["is", "are", "was", "were"],
+    "correctAnswer": "was",
+    "explanation": "In reported speech, present simple often changes to past simple."
   },
   {
     "type": "multiple_choice",
     "level": "B1",
     "topic": "Vocabulary - Education",
-    "questionText": "Students usually _____ exams at the end of the semester.",
-    "options": ["take", "give", "make", "do"],
-    "correctAnswer": "take"
-  },
-  {
-    "type": "fill_in_the_blank",
-    "level": "B1",
-    "topic": "Grammar - Past Perfect Continuous",
-    "questionText": "They _____ for hours before they found the right answer.",
-    "sentenceParts": ["They ", " for hours before they found the right answer."],
-    "correctAnswer": "had been searching"
-  },
-  {
-    "type": "drag_and_drop",
-    "level": "B1",
-    "topic": "Vocabulary - Travel",
-    "questionText": "Drag the words to complete the travel-related sentences.",
-    "blanks": [
-      {"id": "blank1", "sentencePart": "We're going on a ", "options": ["trip", "journey", "voyage"], "correctAnswer": "trip"},
-      {"id": "blank2", "sentencePart": " to the mountains next week."}
-    ],
-    "correctOrder": ["trip"]
-  },
-  {
-    "type": "dropdown",
-    "level": "B1",
-    "topic": "Grammar - Used to",
-    "questionText": "I _____ live in a small village, but now I live in the city.",
-    "options": ["used to", "am used to", "get used to", "would"],
-    "correctAnswer": "used to"
+    "questionText": "Someone who studies at university is called a _____.",
+    "options": ["pupil", "teacher", "professor", "student"],
+    "correctAnswer": "student"
   },
   {
     "type": "multiple_choice",
     "level": "B1",
-    "topic": "Vocabulary - Money",
-    "questionText": "He earns a good _____ from his new job.",
-    "options": ["salary", "fee", "cost", "price"],
-    "correctAnswer": "salary"
+    "topic": "Grammar - Present Perfect Continuous",
+    "questionText": "How long _____ you _____ English?",
+    "options": ["have / been studying", "are / studying", "did / study", "do / study"],
+    "correctAnswer": "have / been studying",
+    "explanation": "Use Present Perfect Continuous for an action that started in the past and is still continuing."
+  },
+  {
+    "type": "multiple_choice",
+    "level": "B1",
+    "topic": "Grammar - 'enough' and 'too'",
+    "questionText": "This coffee is _____ hot to drink.",
+    "options": ["enough", "too", "very", "so"],
+    "correctAnswer": "too",
+    "explanation": "'Too + adjective' means more than is desirable or necessary."
+  },
+  {
+    "type": "multiple_choice",
+    "level": "B1",
+    "topic": "Vocabulary - Health & Fitness",
+    "questionText": "To stay healthy, you should eat a balanced _____ and exercise regularly.",
+    "options": ["food", "meal", "diet", "dish"],
+    "correctAnswer": "diet"
   },
   {
     "type": "fill_in_the_blank",
     "level": "B1",
-    "topic": "Grammar - Third Conditional",
-    "questionText": "If she _____ harder, she would have passed the exam.",
-    "sentenceParts": ["If she ", " harder, she would have passed the exam."],
-    "correctAnswer": "had studied"
+    "topic": "Grammar - Present Perfect",
+    "questionText": "She _____ (not finish) her homework yet.",
+    "sentenceParts": ["She ", " (not finish) her homework yet."],
+    "correctAnswer": "hasn't finished"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Grammar - Past Continuous",
+    "questionText": "While I _____ (drive) home, I saw an accident.",
+    "sentenceParts": ["While I ", " (drive) home, I saw an accident."],
+    "correctAnswer": "was driving"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Vocabulary - Phrasal Verbs",
+    "questionText": "He had to _____ (cancel) the meeting because he was ill.",
+    "sentenceParts": ["He had to ", " (cancel) the meeting because he was ill. (Use a phrasal verb)"],
+    "correctAnswer": "call off",
+    "explanation": "'Call off' means to cancel."
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Grammar - Modals (Possibility)",
+    "questionText": "It _____ (possible rain) later, so take an umbrella.",
+    "sentenceParts": ["It ", " (possible rain) later, so take an umbrella."],
+    "correctAnswer": "might rain",
+    "explanation": "'Might' expresses possibility."
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Grammar - Comparatives",
+    "questionText": "My new phone is _____ (good) than my old one.",
+    "sentenceParts": ["My new phone is ", " (good) than my old one."],
+    "correctAnswer": "better"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Grammar - First Conditional",
+    "questionText": "If you _____ (study) hard, you will pass the exam.",
+    "sentenceParts": ["If you ", " (study) hard, you will pass the exam."],
+    "correctAnswer": "study"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Vocabulary - Work",
+    "questionText": "She works as an _____ in a large company.",
+    "sentenceParts": ["She works as an ", " in a large company. (A job title)"],
+    "correctAnswer": "engineer",
+    "explanation": "Other answers possible, e.g. 'accountant', 'architect'."
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Grammar - Passive Voice (Past Simple)",
+    "questionText": "The Mona Lisa _____ (paint) by Leonardo da Vinci.",
+    "sentenceParts": ["The Mona Lisa ", " (paint) by Leonardo da Vinci."],
+    "correctAnswer": "was painted"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Grammar - Gerunds and Infinitives",
+    "questionText": "I decided _____ (learn) Spanish.",
+    "sentenceParts": ["I decided ", " (learn) Spanish."],
+    "correctAnswer": "to learn",
+    "explanation": "The verb 'decide' is followed by an infinitive (to + verb)."
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Grammar - Past Perfect",
+    "questionText": "By the time they arrived, the party _____ (already / begin).",
+    "sentenceParts": ["By the time they arrived, the party ", " (already / begin)."],
+    "correctAnswer": "had already begun"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Vocabulary - Travel",
+    "questionText": "We stayed in a lovely _____ near the beach during our holiday.",
+    "sentenceParts": ["We stayed in a lovely ", " near the beach during our holiday."],
+    "correctAnswer": "hotel",
+    "explanation": "Other answers like 'apartment' or 'villa' are possible."
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Grammar - Second Conditional",
+    "questionText": "If I _____ (be) you, I would apologize.",
+    "sentenceParts": ["If I ", " (be) you, I would apologize."],
+    "correctAnswer": "were",
+    "explanation": "In the second conditional, 'were' is often used instead of 'was' for 'I/he/she/it'."
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Grammar - Relative Clauses",
+    "questionText": "That's the cafe _____ I first met my best friend.",
+    "sentenceParts": ["That's the cafe ", " I first met my best friend."],
+    "correctAnswer": "where",
+    "explanation": "'Where' is used as a relative pronoun for places."
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Vocabulary - Environment",
+    "questionText": "We should all try to _____ water and electricity.",
+    "sentenceParts": ["We should all try to ", " water and electricity."],
+    "correctAnswer": "save",
+    "explanation": "Other verbs like 'conserve' are also possible."
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Grammar - Modals (Advice)",
+    "questionText": "You _____ (not / eat) so much fast food if you want to be healthy.",
+    "sentenceParts": ["You ", " (not / eat) so much fast food if you want to be healthy."],
+    "correctAnswer": "shouldn't eat"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Grammar - Future (will)",
+    "questionText": "I think it _____ (be) sunny tomorrow.",
+    "sentenceParts": ["I think it ", " (be) sunny tomorrow."],
+    "correctAnswer": "will be"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Vocabulary - Technology",
+    "questionText": "Can you help me _____ this new software on my computer?",
+    "sentenceParts": ["Can you help me ", " this new software on my computer?"],
+    "correctAnswer": "install"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Grammar - Superlatives",
+    "questionText": "This is _____ (expensive) restaurant in the city.",
+    "sentenceParts": ["This is ", " (expensive) restaurant in the city."],
+    "correctAnswer": "the most expensive"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Grammar - Reported Speech (Statements)",
+    "questionText": "He told me, 'I will call you later.' He told me that he _____ call me later.",
+    "sentenceParts": ["He told me, 'I will call you later.' He told me that he ", " call me later."],
+    "correctAnswer": "would"
+  },
+  {
+    "type": "fill_in_the_blank",
+    "level": "B1",
+    "topic": "Vocabulary - Adjectives (Personality)",
+    "questionText": "My sister is very _____. She always makes me laugh.",
+    "sentenceParts": ["My sister is very ", ". She always makes me laugh."],
+    "correctAnswer": "funny",
+    "explanation": "Other adjectives like 'amusing' or 'witty' are possible."
+  },
+  {
+    "type": "true_false",
+    "level": "B1",
+    "topic": "Grammar - Present Perfect vs Past Simple",
+    "questionText": "'I have seen that film last year' is a grammatically correct sentence.",
+    "correctAnswer": false,
+    "explanation": "When a specific past time is mentioned (last year), use Past Simple: 'I saw that film last year.'"
+  },
+  {
+    "type": "true_false",
+    "level": "B1",
+    "topic": "Vocabulary - Phrasal Verbs",
+    "questionText": "'To look forward to' means to anticipate something with pleasure.",
+    "correctAnswer": true
+  },
+  {
+    "type": "true_false",
+    "level": "B1",
+    "topic": "Grammar - Conditionals",
+    "questionText": "The zero conditional is used to talk about general truths and scientific facts.",
+    "correctAnswer": true,
+    "explanation": "Example: If you heat water to 100 degrees Celsius, it boils."
+  },
+  {
+    "type": "true_false",
+    "level": "B1",
+    "topic": "Grammar - Modals",
+    "questionText": "'Mustn't' and 'don't have to' have the same meaning.",
+    "correctAnswer": false,
+    "explanation": "'Mustn't' means something is prohibited. 'Don't have to' means there is no obligation."
+  },
+  {
+    "type": "true_false",
+    "level": "B1",
+    "topic": "Vocabulary - Suffixes",
+    "questionText": "Adding '-ful' to a noun (e.g., 'beauty') often creates an adjective (e.g., 'beautiful').",
+    "correctAnswer": true
+  },
+  {
+    "type": "true_false",
+    "level": "B1",
+    "topic": "Grammar - Passive Voice",
+    "questionText": "The sentence 'My car was fixing yesterday' is correct.",
+    "correctAnswer": false,
+    "explanation": "The correct passive form is 'My car was being fixed yesterday' (Past Continuous Passive) or 'My car was fixed yesterday' (Past Simple Passive)."
+  },
+  {
+    "type": "true_false",
+    "level": "B1",
+    "topic": "Vocabulary - Travel",
+    "questionText": "A 'departure lounge' is where you wait for your flight after checking in.",
+    "correctAnswer": true
+  },
+  {
+    "type": "true_false",
+    "level": "B1",
+    "topic": "Grammar - Gerunds and Infinitives",
+    "questionText": "After prepositions, we usually use the infinitive form of a verb.",
+    "correctAnswer": false,
+    "explanation": "After prepositions, we usually use the gerund (-ing form) of a verb (e.g., 'interested in learning')."
+  },
+  {
+    "type": "true_false",
+    "level": "B1",
+    "topic": "Vocabulary - Work",
+    "questionText": "A 'deadline' is the time by which something must be finished.",
+    "correctAnswer": true
+  },
+  {
+    "type": "true_false",
+    "level": "B1",
+    "topic": "Grammar - Comparatives/Superlatives",
+    "questionText": "The superlative form of 'bad' is 'badder'.",
+    "correctAnswer": false,
+    "explanation": "The superlative form of 'bad' is 'worst'."
+  },
+  {
+    "type": "true_false",
+    "level": "B1",
+    "topic": "Vocabulary - Feelings",
+    "questionText": "If you are 'embarrassed', you feel proud.",
+    "correctAnswer": false,
+    "explanation": "If you are 'embarrassed', you feel awkward, shy, or ashamed."
+  },
+  {
+    "type": "true_false",
+    "level": "B1",
+    "topic": "Grammar - Reported Speech",
+    "questionText": "When reporting a question, the word order changes to that of a statement.",
+    "correctAnswer": true,
+    "explanation": "E.g., 'Where is he?' becomes 'She asked where he was.'"
+  },
+  {
+    "type": "true_false",
+    "level": "B1",
+    "topic": "Vocabulary - Environment",
+    "questionText": "'Deforestation' is the process of planting new trees.",
+    "correctAnswer": false,
+    "explanation": "'Deforestation' is the clearing of forests. Planting new trees is 'reforestation' or 'afforestation'."
+  },
+  {
+    "type": "true_false",
+    "level": "B1",
+    "topic": "Grammar - Past Perfect",
+    "questionText": "Past Perfect is used for an action that happened after another action in the past.",
+    "correctAnswer": false,
+    "explanation": "Past Perfect is used for an action that happened *before* another action in the past."
+  },
+  {
+    "type": "true_false",
+    "level": "B1",
+    "topic": "Vocabulary - Technology",
+    "questionText": "A 'browser' is a software application for accessing information on the World Wide Web.",
+    "correctAnswer": true
+  },
+  {
+    "type": "drag_and_drop",
+    "level": "B1",
+    "topic": "Vocabulary - Phrasal Verbs",
+    "questionText": "Drag the correct phrasal verb particle to complete the sentence.",
+    "blanks": [
+      {"id": "blank1", "sentencePart": "Don't give ", "options": ["up", "in", "off"], "correctAnswer": "up"},
+      {"id": "blank2", "sentencePart": " on your dreams."}
+    ],
+    "correctOrder": ["up"],
+    "explanation": "'Give up' means to stop trying."
+  },
+  {
+    "type": "drag_and_drop",
+    "level": "B1",
+    "topic": "Grammar - Conjunctions",
+    "questionText": "Drag the correct conjunction to complete the sentence.",
+    "blanks": [
+      {"id": "blank1", "sentencePart": "She studied hard; ", "options": ["therefore", "although", "because"], "correctAnswer": "therefore"},
+      {"id": "blank2", "sentencePart": ", she passed the exam easily."}
+    ],
+    "correctOrder": ["therefore"],
+    "explanation": "'Therefore' shows a result or consequence."
+  },
+  {
+    "type": "drag_and_drop",
+    "level": "B1",
+    "topic": "Grammar - Modals",
+    "questionText": "Drag the correct modal verb.",
+    "blanks": [
+      {"id": "blank1", "sentencePart": "You ", "options": ["should", "must", "might"], "correctAnswer": "should"},
+      {"id": "blank2", "sentencePart": " see a doctor if you're not feeling well."}
+    ],
+    "correctOrder": ["should"],
+    "explanation": "'Should' is used to give advice."
+  },
+  {
+    "type": "drag_and_drop",
+    "level": "B1",
+    "topic": "Vocabulary - Prepositional Phrases",
+    "questionText": "Drag the correct preposition.",
+    "blanks": [
+      {"id": "blank1", "sentencePart": "He is responsible ", "options": ["for", "to", "with"], "correctAnswer": "for"},
+      {"id": "blank2", "sentencePart": " the marketing department."}
+    ],
+    "correctOrder": ["for"]
+  },
+  {
+    "type": "drag_and_drop",
+    "level": "B1",
+    "topic": "Grammar - Sentence Structure",
+    "questionText": "Drag the words to form a correct sentence.",
+    "blanks": [
+      {"id": "blank1", "sentencePart": "", "options": ["never", "I", "been"], "correctAnswer": "I"},
+      {"id": "blank2", "sentencePart": "", "options": ["have", "to", "Japan"], "correctAnswer": "have"},
+      {"id": "blank3", "sentencePart": "", "options": ["been", "never", "I"], "correctAnswer": "never"},
+      {"id": "blank4", "sentencePart": "", "options": ["to", "Japan", "have"], "correctAnswer": "been"},
+      {"id": "blank5", "sentencePart": "", "options": ["Japan", "I", "to"], "correctAnswer": "to"},
+      {"id": "blank6", "sentencePart": "", "options": ["Japan", "been", "never"], "correctAnswer": "Japan"},
+      {"id": "blank7", "sentencePart": "."}
+    ],
+    "correctOrder": ["I", "have", "never", "been", "to", "Japan"],
+    "explanation": "This type of drag and drop is for sentence unscrambling. The options for each blank would ideally be all available words for simplicity here, or specific segments. Given the current format, this might be tricky to implement on a platform without specific support for it."
+  },
+  {
+    "type": "drag_and_drop",
+    "level": "B1",
+    "topic": "Vocabulary - Collocations",
+    "questionText": "Drag the verb that collocates with 'a mistake'.",
+    "blanks": [
+      {"id": "blank1", "sentencePart": "Don't worry, everyone can ", "options": ["make", "do", "have"], "correctAnswer": "make"},
+      {"id": "blank2", "sentencePart": " a mistake."}
+    ],
+    "correctOrder": ["make"]
+  },
+  {
+    "type": "drag_and_drop",
+    "level": "B1",
+    "topic": "Grammar - Adverbs of Manner",
+    "questionText": "Drag the correct adverb.",
+    "blanks": [
+      {"id": "blank1", "sentencePart": "She sings ", "options": ["beautiful", "beautifully", "beauty"], "correctAnswer": "beautifully"},
+      {"id": "blank2", "sentencePart": "."}
+    ],
+    "correctOrder": ["beautifully"],
+    "explanation": "Adverbs of manner (e.g., beautifully) describe how an action is done."
+  },
+  {
+    "type": "drag_and_drop",
+    "level": "B1",
+    "topic": "Grammar - Relative Pronouns",
+    "questionText": "Drag the correct relative pronoun.",
+    "blanks": [
+      {"id": "blank1", "sentencePart": "The book ", "options": ["who", "which", "where"], "correctAnswer": "which"},
+      {"id": "blank2", "sentencePart": " I'm reading is very interesting."}
+    ],
+    "correctOrder": ["which"],
+    "explanation": "'Which' is used for things."
+  },
+  {
+    "type": "dropdown",
+    "level": "B1",
+    "topic": "Grammar - Present Perfect vs Past Simple",
+    "questionText": "I [dropdown] my keys. I can't find them anywhere.",
+    "options": ["lost", "have lost", "had lost", "lose"],
+    "correctAnswer": "have lost",
+    "explanation": "Use Present Perfect for a past action with a present result."
+  },
+  {
+    "type": "dropdown",
+    "level": "B1",
+    "topic": "Grammar - Modals of Deduction",
+    "questionText": "He hasn't eaten all day. He [dropdown] be hungry.",
+    "options": ["must", "might", "can't", "should"],
+    "correctAnswer": "must",
+    "explanation": "'Must' is used for strong deduction (you are almost certain)."
+  },
+  {
+    "type": "dropdown",
+    "level": "B1",
+    "topic": "Vocabulary - Word Forms",
+    "questionText": "She is a very [dropdown] person. (CREATE)",
+    "options": ["creative", "creation", "creator", "creatively"],
+    "correctAnswer": "creative",
+    "explanation": "We need an adjective to describe 'person'."
+  },
+  {
+    "type": "dropdown",
+    "level": "B1",
+    "topic": "Grammar - Future Forms",
+    "questionText": "The train [dropdown] at Platform 3 in five minutes. (scheduled event)",
+    "options": ["will arrive", "arrives", "is arriving", "is going to arrive"],
+    "correctAnswer": "arrives",
+    "explanation": "Use Present Simple for scheduled future events (timetables)."
+  },
+  {
+    "type": "dropdown",
+    "level": "B1",
+    "topic": "Grammar - Quantifiers (too/enough)",
+    "questionText": "There isn't [dropdown] sugar in my tea. Can I have some more?",
+    "options": ["too much", "too many", "enough", "little"],
+    "correctAnswer": "enough"
+  },
+  {
+    "type": "dropdown",
+    "level": "B1",
+    "topic": "Vocabulary - Travel",
+    "questionText": "Before you travel, you should check the [dropdown] for your destination.",
+    "options": ["whether", "weather", "if", "climate"],
+    "correctAnswer": "weather",
+    "explanation": "'Weather' refers to the atmospheric conditions. 'Climate' is long-term."
+  },
+  {
+    "type": "dropdown",
+    "level": "B1",
+    "topic": "Grammar - Passive Voice",
+    "questionText": "This report [dropdown] by next Friday.",
+    "options": ["must finish", "must be finished", "must have finished", "must to be finished"],
+    "correctAnswer": "must be finished",
+    "explanation": "Modal passive: modal + be + past participle."
   }
 ]
