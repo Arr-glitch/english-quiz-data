@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Quiz Practice</title>
+    <!-- Link to your external CSS file hosted on GitHub -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1 class="quiz-title">English Quiz Practice</h1>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="progress-text" id="progressText">Loading questions...</div>
+        </div>
+
+        <div id="loadingScreen" class="loading">
+            <p>Loading quiz questions...</p>
+        </div>
+
+        <div id="errorScreen" class="error" style="display: none;">
+            <p id="errorMessage"></p>
+        </div>
+
+        <div id="quizContent" style="display: none;">
+            <div class="question-card fade-in" id="questionCard">
+                <!-- Question content will be inserted here by JavaScript -->
+            </div>
+
+            <div class="controls">
+                <button class="btn btn-secondary" id="prevBtn" onclick="previousQuestion()" disabled>
+                    ← Previous
+                </button>
+                <div class="score-display" id="scoreDisplay">
+                    Score: 0/0
+                </div>
+                <button class="btn" id="nextBtn" onclick="nextQuestion()">
+                    Next →
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final Score Modal -->
+    <div class="modal" id="finalScoreModal">
+        <div class="modal-content">
+            <h2 class="modal-title">Quiz Complete!</h2>
+            <div class="final-score" id="finalScore">0/0</div>
+            <div class="score-message" id="scoreMessage"></div>
+            <button class="btn" onclick="restartQuiz()">Try Again</button>
+        </div>
+    </div>
+
+    <!-- Link to your external JavaScript file hosted on GitHub -->
+    <script src="script.js"></script>
+</body>
+</html>
